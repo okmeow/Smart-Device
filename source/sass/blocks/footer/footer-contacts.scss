@@ -1,0 +1,32 @@
+.footer-contacts__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.footer-contacts__address {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 10px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contacts__phone {
+  display: block;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contacts__phone:not(:last-child) {
+  margin: 0 0 10px 0;
+}

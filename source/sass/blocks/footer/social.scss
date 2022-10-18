@@ -1,0 +1,16 @@
+.social__logo-link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
