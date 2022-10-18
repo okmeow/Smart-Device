@@ -1,0 +1,19 @@
+.page {
+  min-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+.page__body {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #041827;
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}

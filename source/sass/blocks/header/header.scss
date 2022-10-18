@@ -1,0 +1,9 @@
+.header {
+  min-width: 1920px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
