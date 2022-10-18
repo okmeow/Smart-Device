@@ -20,6 +20,17 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// const showMoreButton = document.getAttribute('show-more')
+// console.log(showMoreButton);
+// const hiddenAboutCompany = document.querySelector('.about__description--extra');
+
+// const showExtraText = () => {
+//   hiddenAboutCompany.classList.remove('about__description--hidden');
+// }
+
+// showMoreButton.addEventListener('click', showExtraText);
+
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
