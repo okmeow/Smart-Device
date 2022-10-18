@@ -1,0 +1,40 @@
+.welcome {
+  padding: 305px 0 280px 475px;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, #192024 100%), url("../img/welcome-background.png");
+  background-position: center;
+}
+
+.welcome__title {
+  color: #f2f5f7;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+
+.welcome__description {
+  color: #f2f5f7;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 0 0 40px 0;
+}
+
+.welcome__button {
+  display: inline-block;
+  color: #f2f5f7;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  background-color: #00b2ff;
+  border-radius: 3px;
+}

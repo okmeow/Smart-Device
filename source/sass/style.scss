@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/visually-hidden.scss";
 
 // Blocks
 // ---------------------------------
@@ -22,6 +23,12 @@
 @import "blocks/modal";
 
 @import "blocks/header/header.scss";
+@import "blocks/main/main-container.scss";
+@import "blocks/main/welcome.scss";
+@import "blocks/main/advantages.scss";
+@import "blocks/main/about.scss";
+@import "blocks/main/catalog.scss";
+@import "blocks/main/feedback.scss";
 
 // ---------------------------------
 

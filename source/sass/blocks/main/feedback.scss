@@ -1,0 +1,133 @@
+.feedback {
+  background: url("../img/paper-airplane.png") 80px 140px, linear-gradient(135deg, #026693 23.5%, #00b3ff 15%);
+  background-repeat: no-repeat;
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  width: 1920px;
+  padding: 70px 0 70px 650px;
+}
+
+.feedback__title {
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0 0 15px 0;
+}
+
+.feedback__text {
+  font-weight: 400;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 22px;
+  margin: 0 0 35px 0;
+}
+
+.feedback__fieldset {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 20px;
+  width: 580px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.feedback__input {
+  border: none;
+  width: 275px;
+  height: 50px;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.feedback__textarea {
+  border: none;
+  width: 580px;
+  height: 155px;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 25px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  &::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.feedback__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.feedback__label--textarea {
+  grid-column: 1 / -1;
+}
+
+.feedback__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #041427;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.feedback__checkbox-mark {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  top: 9px;
+}
+
+.feedback__checkbox-field:checked + .feedback__checkbox-mark {
+  &::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 7px;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    transform: translate(4px, 1px) rotate(45deg);
+  }
+}
+
+.feedback__checkbox-text {
+  display: inline-block;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 0 0 0 20px;
+}
