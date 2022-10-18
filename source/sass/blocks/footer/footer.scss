@@ -1,17 +1,18 @@
 .footer {
   background-color: #041827;
+  min-width: 1920px;
 }
 
 .footer__wrapper {
-  width: 80%;
+  width: 1920px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 10px 55px 10px;
+  padding: 50px 200px 55px 300px;
 }
 
 .footer__social {
-  margin-right: 160px;
+  margin: 0 160px 0 100px;
 }
 
 .footer__navigation {

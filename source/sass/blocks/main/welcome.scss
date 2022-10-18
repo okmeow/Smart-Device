@@ -1,7 +1,13 @@
 .welcome {
-  padding: 305px 0 280px 475px;
+  min-width: 1920px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, #192024 100%), url("../img/welcome-background.png");
   background-position: center;
+}
+
+.welcome__wrapper {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 305px 150px 280px 475px;
 }
 
 .welcome__title {

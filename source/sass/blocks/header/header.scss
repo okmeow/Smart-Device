@@ -1,14 +1,15 @@
 .header {
-  width: 1920px;
+  min-width: 100%;
   position: fixed;
   top: 0;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 2;
 }
 
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(180deg, #041827 84.9%, #041827 100%);
-  width: 100%;
+  width: 1920px;
   padding: 30px 350px;
   align-items: center;
   margin: 0 auto;
