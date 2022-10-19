@@ -1,5 +1,9 @@
 .about {
   min-width: 1920px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 770px;
+  }
 }
 
 .about__wrapper {
@@ -7,6 +11,12 @@
   margin: 0 auto;;
   padding: 60px 348px 60px 348px;
   background: url("../img/year2022.png") 350px 50px no-repeat;
+
+  @media (max-width: $vp-1023) {
+    width: 770px;
+    padding: 10px 10px 80px 10px;
+    background-position: 10px 10px;
+  }
 }
 
 .about__title {

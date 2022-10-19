@@ -1,11 +1,20 @@
 .advantages {
   min-width: 1920px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 770px;
+  }
 }
 
 .advantages__wrapper {
   width: 1920px;
   padding: 120px 348px 60px 348px;
   margin: 0 auto;
+
+  @media (max-width: $vp-1023) {
+    width: 770px;
+    padding: 120px 50px 60px 50px;
+  }
 }
 
 .advantages__list {
@@ -23,6 +32,10 @@
   border-left: 5px solid #00b2ff;
   padding: 40px 0 0 45px;
   color: #00b2ff;
+
+  @media (max-width: $vp-1023) {
+    padding: 35px 30px 35px 45px;
+  }
 }
 
 .advantages__item-name {

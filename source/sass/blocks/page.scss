@@ -3,6 +3,14 @@
   height: 100%;
   margin: 0 auto;
   scroll-behavior: smooth;
+
+  @media (max-width: $vp-1023) {
+    min-width: 770px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
 
 .page__body {

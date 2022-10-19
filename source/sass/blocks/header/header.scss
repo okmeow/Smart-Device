@@ -13,10 +13,19 @@
   padding: 30px 350px;
   align-items: center;
   margin: 0 auto;
+
+  @media (max-width: $vp-1023) {
+    width: 770px;
+    padding: 20px 50px;
+  }
 }
 
 .header__logo-link {
   margin: 0 160px 0 0;
+
+  @media (max-width: $vp-1023) {
+    margin: 0 260px 0 0;
+  }
 }
 
 .header__email {
@@ -26,6 +35,10 @@
   line-height: 18px;
   font-weight: 400;
   margin: 0 30px 0 0;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
 }
 
 .header__phone {
@@ -35,6 +48,16 @@
   line-height: 18px;
   font-weight: 400;
   margin: 0 142px 0 0;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}
+
+.header__icon-link {
+  @media (max-width: $vp-1023) {
+    margin: 0 40px 0 0;
+  }
 }
 
 .header__call-me-button {
@@ -49,4 +72,8 @@
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   cursor: pointer;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
 }

@@ -1,6 +1,10 @@
 .footer {
   background-color: #041827;
   min-width: 1920px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 770px;
+  }
 }
 
 .footer__wrapper {
@@ -9,12 +13,25 @@
   display: flex;
   flex-wrap: wrap;
   padding: 50px 200px 55px 300px;
+
+  @media (max-width: $vp-1023) {
+    width: 770px;
+    padding: 65px 50px 55px 50px;
+  }
 }
 
 .footer__social {
   margin: 0 160px 0 100px;
+
+  @media (max-width: $vp-1023) {
+    margin: 0 0 35px 0;
+  }
 }
 
 .footer__navigation {
   margin-right: 30px;
+
+  @media (max-width: $vp-1023) {
+    margin: 0 130px 0 0;
+  }
 }

@@ -16,6 +16,10 @@
   line-height: 22px;
   margin: 0 0 10px 0;
   color: rgba(255, 255, 255, 0.7);
+
+  @media (max-width: $vp-1023) {
+    width: 320px;
+  }
 }
 
 .footer-contacts__phone {
@@ -25,6 +29,10 @@
   font-size: 16px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
+
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 .footer-contacts__phone:not(:last-child) {

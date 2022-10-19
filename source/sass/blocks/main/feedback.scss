@@ -1,6 +1,11 @@
 .feedback {
   background: linear-gradient(135deg, #026693 31.5%, #00b3ff 31.5%);
   min-width: 1920px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 770px;
+    background: #00b3ff;
+  }
 }
 
 .feedback__wrapper {
@@ -10,6 +15,12 @@
   margin: 0 auto;
   width: 1920px;
   padding: 230px 0 200px 1000px;
+
+  @media (max-width: $vp-1023) {
+    width: 770px;
+    padding: 50px 50px 125px 50px;
+    background: none;
+  }
 }
 
 .feedback__title {
@@ -31,7 +42,6 @@
 }
 
 .feedback__fieldset {
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 20px;
@@ -39,6 +49,10 @@
   padding: 0;
   margin: 0;
   border: none;
+
+  @media (max-width: $vp-1023) {
+    gap: 20px 30px;
+  }
 }
 
 .feedback__input {
@@ -55,6 +69,10 @@
 
   &::placeholder {
     color: #ffffff;
+  }
+
+  @media (max-width: $vp-1023) {
+    width: 320px;
   }
 }
 
@@ -74,6 +92,11 @@
     color: #ffffff;
     opacity: 1;
   }
+
+  @media (max-width: $vp-1023) {
+    width: 670px;
+    margin-bottom: 15px;
+  }
 }
 
 .feedback__label {
@@ -88,6 +111,8 @@
 .feedback__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
+  padding: 8px 55px;
+  max-width: 260px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
