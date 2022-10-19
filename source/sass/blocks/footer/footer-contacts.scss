@@ -1,6 +1,7 @@
 .footer-contacts {
   width: 28.3%;
   @media (max-width: $vp-767) {
+    width: 100%;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
@@ -16,7 +17,7 @@
   margin: 0 0 20px 0;
 
   @media (max-width: $vp-767) {
-    padding: 20px 177px 20px 25px;
+    padding: 20px 177px 20px 8%;
     margin: 0;
     cursor: pointer;
   }
@@ -36,9 +37,10 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 0 25px;
+    padding: 0 25px 0 8%;
     font-size: 14px;
     line-height: 19px;
+    margin: 0 0 12px 0;
   }
 }
 
@@ -55,7 +57,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 0 25px;
+    padding: 0 25px 0 8%;
     font-size: 14px;
   }
 }
