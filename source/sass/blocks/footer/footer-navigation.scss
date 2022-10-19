@@ -47,8 +47,11 @@
 }
 
 .footer-navigation__item {
-  // max-width: 230px;
   min-width: 137%;
+
+  @media (max-width: $vp-1023) {
+    min-width: 107%;
+  }
 }
 
 .footer-navigation__item:not(:last-child) {

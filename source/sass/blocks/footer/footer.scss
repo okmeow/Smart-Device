@@ -4,7 +4,8 @@
   max-width: 2600px;
 
   @media (max-width: $vp-1023) {
-    min-width: 770px;
+    min-width: 767px;
+    max-width: $vp-1023;
   }
 
   @media (max-width: $vp-767) {
@@ -19,8 +20,7 @@
   padding: 50px 18.2% 55px 18.2%;
 
   @media (max-width: $vp-1023) {
-    width: 770px;
-    padding: 65px 50px 55px 50px;
+    padding: 52px 4.9% 55px 6%;
   }
 
   @media (max-width: $vp-767) {
@@ -33,7 +33,7 @@
   margin: 0 9.1% 0 0;
 
   @media (max-width: $vp-1023) {
-    margin: 0 0 35px 0;
+    margin: 0 0 37px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -46,7 +46,7 @@
   margin: 1% 2.4% 0 0;
 
   @media (max-width: $vp-1023) {
-    margin: 0 130px 0 0;
+    margin: 0 12.5% 0 0;
   }
 
   @media (max-width: $vp-767) {
@@ -56,4 +56,8 @@
 
 .footer__contacts {
   margin: 1% 0 0 0;
+
+  @media (max-width: $vp-1023) {
+    margin: 0;
+  }
 }
