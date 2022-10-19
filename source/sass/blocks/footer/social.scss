@@ -1,4 +1,6 @@
 .social {
+  width: 21.7%;
+
   @media (max-width: $vp-1023) {
     display: flex;
     flex-wrap: wrap;
@@ -27,11 +29,12 @@
 }
 
 .social__list {
-  margin: 0;
+  margin: 0 0 0 3%;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   @media (max-width: $vp-767) {
     margin: 0 0 20px 0;
@@ -39,5 +42,5 @@
 }
 
 .social__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 6%;
 }

@@ -1,6 +1,7 @@
 .footer {
   background-color: #041827;
-  min-width: 1920px;
+  min-width: $vp-1024;
+  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
     min-width: 770px;
@@ -12,11 +13,10 @@
 }
 
 .footer__wrapper {
-  width: 1920px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 200px 55px 300px;
+  padding: 50px 18.2% 55px 18.2%;
 
   @media (max-width: $vp-1023) {
     width: 770px;
@@ -30,7 +30,7 @@
 }
 
 .footer__social {
-  margin: 0 160px 0 100px;
+  margin: 0 9.1% 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 0 35px 0;
@@ -43,7 +43,7 @@
 
 
 .footer__navigation {
-  margin-right: 30px;
+  margin: 1% 2.4% 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 130px 0 0;
@@ -52,4 +52,8 @@
   @media (max-width: $vp-767) {
     margin: 0;
   }
+}
+
+.footer__contacts {
+  margin: 1% 0 0 0;
 }
