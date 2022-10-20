@@ -1,9 +1,11 @@
 .feedback {
   background: linear-gradient(135deg, #026693 31.5%, #00b3ff 31.5%);
-  min-width: 1920px;
+  width: 100vw;
+  min-width: $vp-1024;
+  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
-    min-width: 770px;
+    min-width: 768px;
     background: #00b3ff;
   }
 
@@ -14,20 +16,22 @@
 
 .feedback__wrapper {
   background: url("../img/paper-airplane.png");
-  background-position: 280px 260px;
+  background-position: 15% 260px;
   background-repeat: no-repeat;
   margin: 0 auto;
-  width: 1920px;
-  padding: 230px 0 200px 1000px;
+  width: 100%;
+  padding: 230px 7% 200px 47%;
+
+  @media (max-width: 1350px) {
+    background-position: -5% 260px;
+  }
 
   @media (max-width: $vp-1023) {
-    width: 770px;
-    padding: 50px 50px 125px 50px;
+    padding: 50px 6.5% 125px 6.5%;
     background: none;
   }
 
   @media (max-width: $vp-767) {
-    width: 320px;
     padding: 50px 25px 90px 25px;
   }
 }
@@ -64,13 +68,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 20px;
-  width: 580px;
+  width: 70%;
+  max-width: 580px;
+  min-width: 470px;
   padding: 0;
   margin: 0;
   border: none;
 
   @media (max-width: $vp-1023) {
     gap: 20px 30px;
+    width: 100%;
+    max-width: 780px;
   }
 
   @media (max-width: $vp-767) {
@@ -82,7 +90,8 @@
 
 .feedback__input {
   border: none;
-  width: 275px;
+  width: 100%;
+  min-width: 225px;
   height: 50px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
@@ -97,7 +106,8 @@
   }
 
   @media (max-width: $vp-1023) {
-    width: 320px;
+    min-width: 320px;
+    max-width: 375px;
   }
 
   @media (max-width: $vp-767) {
@@ -107,7 +117,9 @@
 
 .feedback__textarea {
   border: none;
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
+  min-width: 470px;
   height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
@@ -123,7 +135,7 @@
   }
 
   @media (max-width: $vp-1023) {
-    width: 670px;
+    max-width: 780px;
     margin-bottom: 15px;
   }
 

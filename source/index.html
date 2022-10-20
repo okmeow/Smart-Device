@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Сайт компании по производству печатных плат Smart Device">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -102,9 +102,9 @@
       <section class="about">
         <div class="about__wrapper">
           <h3 class="about__title">О компании</h3>
-          <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней</p>
-          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</p>
-          <p class="about__description about__description--extra about__description--hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+          <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии c 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <p class="about__description about__description--extra about__description--hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
           <button class="about__button" type="button" data-show-more="show-more">Подробнее</button>
         </div>
       </section>
@@ -134,7 +134,7 @@
       </section>
 
       <section class="feedback">
-        <a name="feedback-form"></a>
+        <a id="feedback-form"></a>
         <div class="feedback__wrapper">
           <h3 class="feedback__title">Остались вопросы? Задайте их нам!</h3>
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
@@ -148,7 +148,7 @@
                 <input class="feedback__input" type="number" placeholder="Телефон" name="phone">
               </label>
               <label class="feedback__label feedback__label--textarea">
-                <textarea class="feedback__textarea" type="text" placeholder="Ваш вопрос" name="question"></textarea>
+                <textarea class="feedback__textarea" placeholder="Ваш вопрос" name="question"></textarea>
               </label>
               <button class="feedback__button" type="submit">Задать вопрос</button>
               <label class="feedback__label">
@@ -167,7 +167,10 @@
         <section class="footer__social social">
           <h3 class="visually-hidden">Социальные сети</h3>
           <a class="social__logo-link" href="index.html">
-            <img class="social__logo" src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
+            <picture>
+              <!-- <source media="(min-width: 768px)" srcset="img/tablet/footer-logo.svg"> -->
+              <img class="social__logo" src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
+            </picture>
           </a>
           <ul class="social__list">
             <li class="social__item">

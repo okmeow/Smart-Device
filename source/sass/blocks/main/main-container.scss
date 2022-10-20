@@ -1,8 +1,10 @@
 .main-container {
-  min-width: 1920px;
+  width: 100vw;
+  min-width: $vp-1024;
+  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
-    min-width: 770px;
+    min-width: 768px;
   }
 
   @media (max-width: $vp-767) {

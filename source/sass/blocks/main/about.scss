@@ -1,8 +1,10 @@
 .about {
-  min-width: 1920px;
+  width: 100vw;
+  min-width: $vp-1024;
+  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
-    min-width: 770px;
+    min-width: 768px;
   }
 
   @media (max-width: $vp-767) {
@@ -11,19 +13,17 @@
 }
 
 .about__wrapper {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;;
-  padding: 60px 348px 60px 348px;
-  background: url("../img/year2022.png") 350px 50px no-repeat;
+  padding: 60px 24.7% 60px 35.7%;
+  background: url("../img/year2022.png") 19% 50px no-repeat;
 
   @media (max-width: $vp-1023) {
-    width: 770px;
-    padding: 10px 10px 80px 10px;
-    background-position: 10px 10px;
+    padding: 10px 6.5% 80px 29.3%;
+    background-position: 6% 10px;
   }
 
   @media (max-width: $vp-767) {
-    width: 320px;
     padding: 50px 25px 80px 25px;
     background: none;
   }
@@ -35,7 +35,7 @@
   font-size: 36px;
   line-height: 51px;
   color: #041827;
-  margin: 0 0 15px 250px;
+  margin: 0 0 15px 0;
 
   @media (max-width: $vp-767) {
     margin: 0 0 15px 0;
@@ -48,7 +48,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #041827;
-  margin: 0 0 15px 250px;
+  margin: 0 0 15px 0;
 
   @media (max-width: $vp-767) {
     margin: 0 0 15px 0;
@@ -61,7 +61,7 @@
 
 .about__button {
   display: inline-block;
-  margin: 10px 0 0 250px;
+  margin: 10px 0 0 0;
   padding: 14px 43px 14px 42px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
