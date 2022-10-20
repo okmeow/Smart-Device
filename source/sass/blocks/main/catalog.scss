@@ -19,7 +19,7 @@
   padding: 70px 10% 70px 18%;
 
   @media (max-width: $vp-1023) {
-    padding: 60px 6.5%;
+    padding: 55px 6.5% 75px 6.5%;
   }
 
   @media (max-width: $vp-767) {
@@ -33,6 +33,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $vp-1023) {
+    margin: 0 0 35px 0;
+  }
 
   @media (max-width: $vp-767) {
     display: none;
@@ -159,7 +163,7 @@
   }
 
   @media (max-width: $vp-1023) {
-    padding: 40px 74% 150px 6.8%;
+    padding: 40px 76% 150px 6.8%;
   }
 
   @media (max-width: 900px) {
@@ -180,8 +184,11 @@
   width: 170px;
   display: block;
 
-  @media (max-width: $vp-767) {
+  @media (max-width: $vp-1023) {
     width: 150px;
+  }
+
+  @media (max-width: $vp-767) {
     font-size: 18px;
   }
 }

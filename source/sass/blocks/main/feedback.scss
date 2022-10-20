@@ -27,7 +27,7 @@
   }
 
   @media (max-width: $vp-1023) {
-    padding: 50px 6.5% 125px 6.5%;
+    padding: 47px 6.5% 125px 6.5%;
     background: none;
   }
 
@@ -44,6 +44,10 @@
   line-height: 51px;
   margin: 0 0 15px 0;
 
+  @media (max-width: $vp-1023) {
+    margin: 0 0 6px 0;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 30px;
     line-height: 42px;
@@ -57,6 +61,10 @@
   color: #ffffff;
   line-height: 22px;
   margin: 0 0 35px 0;
+
+  @media (max-width: $vp-1023) {
+    margin: 0 0 25px 0;
+  }
 
   @media (max-width: $vp-767) {
     font-size: 14px;
@@ -89,6 +97,8 @@
 }
 
 .feedback__input {
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
   border: none;
   width: 100%;
   min-width: 225px;
@@ -99,7 +109,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
 
   &::placeholder {
     color: #ffffff;
@@ -116,6 +125,7 @@
 }
 
 .feedback__textarea {
+  font-family: "PT Mono", "Arial", sans-serif;
   border: none;
   width: 100%;
   max-width: 580px;
@@ -137,6 +147,7 @@
   @media (max-width: $vp-1023) {
     max-width: 780px;
     margin-bottom: 15px;
+    padding: 30px 15px;
   }
 
   @media (max-width: $vp-767) {
@@ -169,6 +180,12 @@
   background-color: #041427;
   border-radius: 3px;
   cursor: pointer;
+
+  @media (max-width: $vp-1023) {
+    padding: 16px 59px 10px 59px;
+    max-width: 265px;
+    margin-top: -7px;
+  }
 }
 
 .feedback__checkbox-mark {
@@ -202,4 +219,8 @@
   color: #ffffff;
   opacity: 0.8;
   padding: 0 0 0 20px;
+
+  @media (max-width: $vp-1023) {
+    padding: 0 0 0 25px;
+  }
 }

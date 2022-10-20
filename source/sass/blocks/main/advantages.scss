@@ -18,7 +18,7 @@
   margin: 0 auto;
 
   @media (max-width: $vp-1023) {
-    padding: 120px 6.5% 60px 6.5%;
+    padding: 80px 6.5% 60px 6.5%;
   }
 
   @media (max-width: $vp-767) {
@@ -34,6 +34,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
+  @media (max-width: $vp-1023) {
+    // gap: 28px 30px;
+  }
+
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
@@ -48,7 +52,8 @@
   color: #00b2ff;
 
   @media (max-width: $vp-1023) {
-    padding: 35px 30px 35px 45px;
+    padding: 38px 35px 30px 41px;
+    min-height: 360px;
   }
 
   @media (max-width: $vp-767) {
@@ -63,6 +68,12 @@
   }
 }
 
+.advantages__icon {
+  @media (max-width: $vp-1023) {
+    margin: 0 0 8px 0;
+  }
+}
+
 .advantages__item-name {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #00b2ff;
@@ -71,9 +82,21 @@
   line-height: 34px;
   margin: 0 0 15px 0;
 
+  @media (max-width: $vp-1023) {
+    margin: 0 0 11px 0;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+.advantages__item-name--price {
+  @media (min-width: $vp-767) {
+    @media (max-width: $vp-1023) {
+      margin: 0 0 2px 0;
+    }
   }
 }
 
@@ -81,7 +104,7 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 135%;
   color: #041827;
   margin: 0;
 
