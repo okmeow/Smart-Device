@@ -1,7 +1,6 @@
 .header {
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2600px;
   position: fixed;
   top: 0;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -20,9 +19,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 2600px;
   padding: 30px 18.2% 35px 18.2%;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: 2600px) {
+    padding: 30px 12.2% 35px 17.2%;
+  }
 
   @media (max-width: 1800px) {
     padding: 30px 8% 30px 18.2%;

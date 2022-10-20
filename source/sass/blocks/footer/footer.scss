@@ -2,7 +2,6 @@
   background-color: #041827;
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
@@ -17,8 +16,10 @@
 
 .footer__wrapper {
   width: 100%;
+  max-width: 2600px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   padding: 50px 18.2% 55px 18.2%;
 
   @media (max-width: $vp-1023) {

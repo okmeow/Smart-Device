@@ -1,7 +1,6 @@
 .advantages {
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
@@ -14,6 +13,7 @@
 
 .advantages__wrapper {
   width: 100%;
+  max-width: 2600px;
   padding: 122px 18% 60px 18.2%;
   margin: 0 auto;
 

@@ -2,7 +2,6 @@
   background-color: #041827;
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
@@ -14,8 +13,9 @@
 }
 
 .catalog__wrapper {
-  margin: 0 auto;
   width: 100%;
+  max-width: 2600px;
+  margin: 0 auto;
   padding: 67px 10% 140px 18.1%;
 
   @media (max-width: $vp-1023) {
@@ -99,9 +99,19 @@
   background-position: 100% 100%, 0 0;
   background-repeat: no-repeat, repeat;
 
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-1@2x.jpg");
+  //   background-size: auto, 350px auto;
+  // }
+
   @media (max-width: $vp-1023) {
     background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-1.jpg");
     background-size: auto, 100%;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-1@2x.jpg");
+    //   background-size: auto, 670px auto;
+    // }
   }
 
   @media (max-width: $vp-767) {
@@ -114,9 +124,19 @@
   background-position: 100% 100%, 0 0;
   background-repeat: no-repeat, repeat;
 
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-2@2x.jpg");
+  //   background-size: auto, 350px auto;
+  // }
+
   @media (max-width: $vp-1023) {
     background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-2.jpg");
     background-size: auto, 100%;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-2@2x.jpg");
+    //   background-size: auto, 670px auto;
+    // }
   }
 
   @media (max-width: $vp-767) {
@@ -125,13 +145,24 @@
 }
 
 .catalog__item--components {
+  background-color: #25313d;
   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-3.jpg");
   background-position: 100% 100%, 0 0;
   background-repeat: no-repeat, repeat;
 
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-3@2x.jpg");
+  //   background-size: auto, 350px auto;
+  // }
+
   @media (max-width: $vp-1023) {
     background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-3.jpg");
     background-size: auto, 100%;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-3@2x.jpg");
+    //   background-size: auto, 670px auto;
+    // }
   }
 
   @media (max-width: $vp-767) {

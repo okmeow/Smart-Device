@@ -2,7 +2,6 @@
   background: linear-gradient(139.2deg, #026693 33.5%, #00b3ff 31.5%);
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2600px;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
@@ -15,12 +14,22 @@
 }
 
 .feedback__wrapper {
-  background: url("../img/paper-airplane.png");
+  background-image: url("../img/paper-airplane.png");
   background-position: 24.5% 245px;
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100%;
+  max-width: 2600px;
   padding: 164px 7% 250px 51%;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/paper-airplane@2x.png");
+  //   background-size: 510px auto;
+  // }
+
+  @media (min-width: 2600px) {
+    padding: 164px 7% 250px 35%;
+  }
 
   @media (max-width: 1420px) {
     background-position: 0 260px;
@@ -28,7 +37,7 @@
 
   @media (max-width: $vp-1023) {
     padding: 47px 6.5% 125px 6.5%;
-    background: none;
+    background-image: none;
   }
 
   @media (max-width: $vp-767) {
