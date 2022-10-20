@@ -78,6 +78,10 @@
   &:hover {
     box-shadow: 0 0 5px 0 #ffffff;
   }
+
+  &:active {
+    box-shadow: 0 0 10px 0 #ffffff;
+  }
 }
 
 .catalog__item:not(:last-child) {

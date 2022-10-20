@@ -78,8 +78,12 @@
   }
 }
 
-.header__icon-link {
-  margin: 0 5px 0 0;
+.header__icon-link:not(:last-child) {
+  margin: 0 6.3vw 0 0;
+
+  @media (max-width: $vp-1023) {
+    margin: 0 5px 0 0;
+  }
 }
 
 .header__email + .header__icon-link {
@@ -95,7 +99,8 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  margin: 0 6.2vw 0 0;
+  padding: 10px 0 10px 5px;
+  margin-bottom: 7px;
 
   @media (max-width: $vp-1023) {
     display: none;
@@ -108,6 +113,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  padding: 10px 0 10px 5px;
 
   @media (max-width: $vp-1023) {
     display: none;
@@ -136,5 +142,15 @@
 
   @media (max-width: $vp-1023) {
     display: none;
+  }
+
+  &:hover {
+    outline: 2px solid #00b2ff;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: 2px solid #00b2ff;
+    outline-offset: 1px;
   }
 }

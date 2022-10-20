@@ -191,6 +191,16 @@
     max-width: 265px;
     margin: -7px 0 0 0;
   }
+
+  &:hover {
+    outline: 2px solid #041427;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: 2px solid #041427;
+    outline-offset: 1px;
+  }
 }
 
 .feedback__checkbox-mark {
@@ -216,6 +226,10 @@
   }
 }
 
+.feedback__checkbox-field:focus + .feedback__checkbox-mark{
+  outline: 2px solid #041427;
+}
+
 .feedback__checkbox-text {
   display: inline-block;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -232,4 +246,8 @@
   @media (max-width: $vp-1023) {
     padding: 0 0 0 25px;
   }
+}
+
+.feedback__label:hover .feedback__checkbox-text {
+  opacity: 1;
 }
