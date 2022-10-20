@@ -11,8 +11,11 @@
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo-link" href="index.html">
-          <img class="header__logo-image" src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
+        <a class="header__logo-link">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/mobile/logo-mobile.svg">
+            <img class="header__logo-image" src="img/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
+          </picture>
         </a>
         <section class="header__contacts">
           <h2 class="visually-hidden">Контакты</h2>
@@ -103,8 +106,7 @@
         <div class="about__wrapper">
           <h3 class="about__title">О компании</h3>
           <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии c 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-          <p class="about__description about__description--extra about__description--hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
+          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.<span class="about__extra-description"> Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.<span class="about__additional-description"> Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</span></span></p>
           <button class="about__button" type="button" data-show-more="show-more">Подробнее</button>
         </div>
       </section>
@@ -142,10 +144,10 @@
             <fieldset class="feedback__fieldset">
               <legend class="visually-hidden">Поля для ввода</legend>
               <label class="feedback__label">
-                <input class="feedback__input" type="text" placeholder="Имя" name="name">
+                <input class="feedback__input" type="text" placeholder="Имя" name="name" required>
               </label>
               <label class="feedback__label">
-                <input class="feedback__input" type="number" placeholder="Телефон" name="phone">
+                <input class="feedback__input" type="number" placeholder="Телефон" name="phone" required>
               </label>
               <label class="feedback__label feedback__label--textarea">
                 <textarea class="feedback__textarea" placeholder="Ваш вопрос" name="question"></textarea>
@@ -168,8 +170,7 @@
           <h3 class="visually-hidden">Социальные сети</h3>
           <a class="social__logo-link" href="index.html">
             <picture>
-              <!-- <source media="(min-width: 768px)" srcset="img/tablet/footer-logo.svg"> -->
-              <img class="social__logo" src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
+              <img class="social__logo" src="img/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
             </picture>
           </a>
           <ul class="social__list">

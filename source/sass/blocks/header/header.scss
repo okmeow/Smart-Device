@@ -10,6 +10,10 @@
   @media (max-width: $vp-1023) {
     min-width: 768px;
   }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
 
 .header__wrapper {
@@ -41,8 +45,11 @@
   }
 
   @media (max-width: $vp-1023) {
-    width: 100%;
     padding: 20px 6.5%;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 15px 8.1% 20px 8.1%;
   }
 }
 
@@ -59,6 +66,17 @@
 
   @media (max-width: $vp-1023) {
     margin: 0 51% 0 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 0 50% 0 0;
+  }
+}
+
+.header__logo-image {
+  @media (max-width: $vp-767) {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -78,11 +96,23 @@
   }
 }
 
+.header__icon-link {
+  color: #f2f5f7;
+
+  &:hover {
+    color: #00b2ff;
+  }
+}
+
 .header__icon-link:not(:last-child) {
   margin: 0 6.3vw 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 40px 0 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 0 35px 0 0;
   }
 }
 
@@ -94,7 +124,6 @@
 
 .header__email {
   display: inline-block;
-  color: #f2f5f7;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -108,7 +137,6 @@
 }
 
 .header__phone {
-  color: #f2f5f7;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -133,14 +161,15 @@
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   cursor: pointer;
+  user-select: none;
 
   @media (max-width: $vp-1023) {
     display: none;
   }
 
   &:hover {
-    outline: 2px solid #00b2ff;
-    outline-offset: 2px;
+    border: 1px solid #00b2ff;
+    color: #00b2ff;
   }
 
   &:active {

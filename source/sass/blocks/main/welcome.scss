@@ -6,13 +6,15 @@
   background-position: center;
 
   @media (max-width: $vp-1023) {
-    background: url("../img/tablet/welcome-background.png");
     min-width: 768px;
+    background: url("../img/tablet/welcome-background.png");
     background-size: 100%;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
+    background: url("../img/mobile/welcome-background.png");
+    background-size: 100%;
   }
 }
 
@@ -26,7 +28,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 150px 20px 190px 20px;
+    padding: 150px 8.5% 190px 8.5%;
   }
 }
 
@@ -49,6 +51,7 @@
   @media (max-width: $vp-767) {
     font-size: 36px;
     line-height: 42px;
+    margin: 0 0 8px 0;
   }
 }
 
@@ -69,7 +72,7 @@
   @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 22px;
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
   }
 }
 
@@ -85,6 +88,7 @@
   padding: 15px 25px;
   background-color: #00b2ff;
   border-radius: 3px;
+  user-select: none;
 
   @media (max-width: $vp-1023) {
     margin: 0 0 0 45px;
@@ -95,17 +99,6 @@
     display: none;
   }
 
-  &--mobile {
-    display: none;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-
-    @media (max-width: $vp-767) {
-      display: inline-block;
-    }
-  }
-
   &:hover {
     outline: 2px solid #00b2ff;
     outline-offset: 2px;
@@ -114,5 +107,18 @@
   &:active {
     outline: 2px solid #00b2ff;
     outline-offset: 1px;
+  }
+}
+
+.welcome__button--mobile {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 35px;
+    display: inline-block;
+    margin: 0;
   }
 }
