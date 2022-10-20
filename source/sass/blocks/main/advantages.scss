@@ -14,7 +14,7 @@
 
 .advantages__wrapper {
   width: 100%;
-  padding: 120px 18% 60px 18%;
+  padding: 122px 18% 60px 18.2%;
   margin: 0 auto;
 
   @media (max-width: $vp-1023) {
@@ -48,8 +48,9 @@
   box-sizing: border-box;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
-  padding: 40px 40px 40px 45px;
+  padding: 40px 40px 40px 40px;
   color: #00b2ff;
+  min-height: 300px;
 
   @media (max-width: $vp-1023) {
     padding: 38px 35px 30px 41px;
@@ -69,6 +70,8 @@
 }
 
 .advantages__icon {
+  margin: 0 0 15px 0;
+
   @media (max-width: $vp-1023) {
     margin: 0 0 8px 0;
   }

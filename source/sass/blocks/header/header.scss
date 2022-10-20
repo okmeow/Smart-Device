@@ -16,7 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 30px 18.2%;
+  padding: 30px 18.2% 35px 18.2%;
   align-items: center;
   margin: 0 auto;
 
@@ -89,6 +89,7 @@
 }
 
 .header__email {
+  display: inline-block;
   color: #f2f5f7;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
@@ -121,12 +122,13 @@
 
 .header__call-me-button {
   display: block;
-  padding: 10px 22px;
+  padding: 10px 16px 12px 16px;
   color: #f2f5f7;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 1px solid #f2f5f7;
   border-radius: 3px;

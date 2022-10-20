@@ -16,7 +16,7 @@
 .catalog__wrapper {
   margin: 0 auto;
   width: 100%;
-  padding: 70px 10% 70px 18%;
+  padding: 67px 10% 140px 18.1%;
 
   @media (max-width: $vp-1023) {
     padding: 55px 6.5% 75px 6.5%;
@@ -33,6 +33,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+  margin: 0 0 55px 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 0 35px 0;
@@ -136,30 +137,30 @@
   display: inline-block;
   box-sizing: border-box;
   margin: 0;
-  padding: 50px 40% 540px 40px;
+  padding: 45px 40% 545px 40px;
 
   @media (max-width: 1700px) {
-    padding: 50px 32% 540px 40px;
+    padding: 45px 32% 545px 40px;
   }
 
   @media (max-width: 1600px) {
-    padding: 50px 25% 540px 40px;
+    padding: 45px 25% 545px 40px;
   }
 
   @media (max-width: 1500px) {
-    padding: 50px 23% 540px 40px;
+    padding: 45px 23% 545px 40px;
   }
 
   @media (max-width: 1400px) {
-    padding: 50px 17% 540px 40px;
+    padding: 45px 17% 545px 40px;
   }
 
   @media (max-width: 1350px) {
-    padding: 50px 12% 540px 40px;
+    padding: 45px 12% 545px 40px;
   }
 
   @media (max-width: 1250px) {
-    padding: 50px 5% 540px 40px;
+    padding: 45px 5% 545px 40px;
   }
 
   @media (max-width: $vp-1023) {

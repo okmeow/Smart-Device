@@ -1,5 +1,5 @@
 .feedback {
-  background: linear-gradient(135deg, #026693 31.5%, #00b3ff 31.5%);
+  background: linear-gradient(139.2deg, #026693 33.5%, #00b3ff 31.5%);
   width: 100vw;
   min-width: $vp-1024;
   max-width: 2600px;
@@ -16,14 +16,14 @@
 
 .feedback__wrapper {
   background: url("../img/paper-airplane.png");
-  background-position: 15% 260px;
+  background-position: 24.5% 245px;
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100%;
-  padding: 230px 7% 200px 47%;
+  padding: 164px 7% 250px 51%;
 
-  @media (max-width: 1350px) {
-    background-position: -5% 260px;
+  @media (max-width: 1420px) {
+    background-position: 0 260px;
   }
 
   @media (max-width: $vp-1023) {
@@ -42,7 +42,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  margin: 0 0 15px 0;
+  margin: 0 0 12px -5px;
 
   @media (max-width: $vp-1023) {
     margin: 0 0 6px 0;
@@ -75,8 +75,8 @@
 .feedback__fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 20px;
-  width: 70%;
+  gap: 20px 30px;
+  width: 80%;
   max-width: 580px;
   min-width: 470px;
   padding: 0;
@@ -133,11 +133,15 @@
   height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  padding: 25px 15px;
+  padding: 22px 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+
+  @media (max-width: $vp-1023) {
+    padding: 25px 15px;
+  }
 
   &::placeholder {
     color: #ffffff;
@@ -167,8 +171,8 @@
 .feedback__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
-  padding: 8px 55px;
-  max-width: 260px;
+  padding: 14px 57px;
+  max-width: 265px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -180,11 +184,12 @@
   background-color: #041427;
   border-radius: 3px;
   cursor: pointer;
+  margin: 7px 0 0 0;
 
   @media (max-width: $vp-1023) {
     padding: 16px 59px 10px 59px;
     max-width: 265px;
-    margin-top: -7px;
+    margin: -7px 0 0 0;
   }
 }
 
@@ -195,7 +200,8 @@
   border-radius: 3px;
   width: 15px;
   height: 15px;
-  top: 9px;
+  top: 29px;
+  left: 10px;
 }
 
 .feedback__checkbox-field:checked + .feedback__checkbox-mark {
@@ -218,7 +224,10 @@
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 35px;
+  align-self: bottom;
+  position: absolute;
+  bottom: 0;
 
   @media (max-width: $vp-1023) {
     padding: 0 0 0 25px;
