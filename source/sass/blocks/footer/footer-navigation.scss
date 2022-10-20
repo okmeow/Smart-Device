@@ -1,5 +1,5 @@
 .footer-navigation {
-  width: 38.5%;
+  width: 35.5%;
 
   @media (max-width: $vp-767) {
     width: 100%;
@@ -49,7 +49,8 @@
 }
 
 .footer-navigation__item {
-  min-width: 137%;
+  min-width: 105%;
+  margin-right: 23.5%;
 
   @media (max-width: $vp-1023) {
     min-width: 107%;
