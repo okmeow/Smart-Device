@@ -18,10 +18,12 @@
   padding: 60px 18% 120px 31.3%;
   background: url("../img/year2022.png") 19.8% 60px no-repeat;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/year2022@2x.png");
-    background-size: 150px auto;
-    background-repeat: no-repeat;
+  @media (min-width: $vp-768) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/year2022@2x.png");
+      background-size: 150px auto;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (max-width: $vp-1023) {

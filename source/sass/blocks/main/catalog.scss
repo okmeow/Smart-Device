@@ -95,52 +95,68 @@
 }
 
 .catalog__item--produce {
+  background-color: #25313d;
   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-1.jpg");
   background-position: 100% 100%, 0 0;
   background-repeat: no-repeat, repeat;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-1@2x.jpg");
-  //   background-size: auto, 350px auto;
-  // }
+  @media (min-width: $vp-1024) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-1@2x.jpg");
+      background-size: auto, 350px auto;
+    }
+  }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-1.jpg");
     background-size: auto, 100%;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-1@2x.jpg");
-    //   background-size: auto, 670px auto;
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-1@2x.jpg");
+      background-size: auto, 100% auto;
+    }
   }
 
   @media (max-width: $vp-767) {
     background-image: url("../img/catalog-icon-mobile.png"), url("../img/mobile/catalog-background-1.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/mobile/catalog-background-1@2x.jpg");
+      background-size: auto, 100% auto;
+    }
   }
 }
 
 .catalog__item--installation {
+  background-color: #25313d;
   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-2.jpg");
   background-position: 100% 100%, 0 0;
   background-repeat: no-repeat, repeat;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-2@2x.jpg");
-  //   background-size: auto, 350px auto;
-  // }
+  @media (min-width: $vp-1024) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-2@2x.jpg");
+      background-size: auto, 350px auto;
+    }
+  }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-2.jpg");
     background-size: auto, 100%;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-2@2x.jpg");
-    //   background-size: auto, 670px auto;
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-2@2x.jpg");
+      background-size: auto, 100% auto;
+    }
   }
 
   @media (max-width: $vp-767) {
     background-image: url("../img/catalog-icon-mobile.png"), url("../img/mobile/catalog-background-2.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/mobile/catalog-background-2@2x.jpg");
+      background-size: auto, 100% auto;
+    }
   }
 }
 
@@ -150,23 +166,30 @@
   background-position: 100% 100%, 0 0;
   background-repeat: no-repeat, repeat;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-3@2x.jpg");
-  //   background-size: auto, 350px auto;
-  // }
+  @media (min-width: $vp-1024) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/catalog-background-3@2x.jpg");
+      background-size: auto, 350px auto;
+    }
+  }
 
   @media (max-width: $vp-1023) {
     background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-3.jpg");
     background-size: auto, 100%;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-3@2x.jpg");
-    //   background-size: auto, 670px auto;
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/tablet/catalog-background-3@2x.jpg");
+      background-size: auto, 100% auto;
+    }
   }
 
   @media (max-width: $vp-767) {
     background-image: url("../img/catalog-icon-mobile.png"), url("../img/mobile/catalog-background-3.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-icon.png"), url("../img/mobile/catalog-background-3@2x.jpg");
+      background-size: auto, 100% auto;
+    }
   }
 }
 

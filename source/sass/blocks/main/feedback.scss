@@ -22,13 +22,15 @@
   max-width: 2600px;
   padding: 164px 7% 250px 51%;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/paper-airplane@2x.png");
-  //   background-size: 510px auto;
-  // }
-
   @media (min-width: 2600px) {
     padding: 164px 7% 250px 35%;
+  }
+
+  @media (min-width: $vp-1023) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/paper-airplane@2x.png");
+      background-size: 510px auto;
+    }
   }
 
   @media (max-width: 1420px) {
