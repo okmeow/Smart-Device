@@ -106,6 +106,10 @@
   &:hover {
     color: #00b2ff;
   }
+
+  &:active {
+    color: #59cdff;
+  }
 }
 
 .header__icon-link:not(:last-child) {

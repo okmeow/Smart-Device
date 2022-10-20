@@ -1,5 +1,5 @@
 .footer-navigation {
-  width: 38.5%;
+  // width: 38.5%;
 
   @media (max-width: $vp-767) {
     width: 100%;
@@ -28,15 +28,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-height: 168px;
-  width: 38.5%;
+
+  @media (min-width: $vp-1024) {
+    display: inline-flex;
+    writing-mode: vertical-lr;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-height: 168px;
+  }
 
   @media (max-width: $vp-1023) {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 220px;
     max-height: none;
   }
@@ -49,11 +53,21 @@
 }
 
 .footer-navigation__item {
-  min-width: 137%;
+  @media (min-width: $vp-1024) {
+    writing-mode: horizontal-tb;
+    width: 11%;
+  }
 
   @media (max-width: $vp-1023) {
     min-width: 107%;
   }
+}
+
+.footer-navigation__item:nth-child(1),
+.footer-navigation__item:nth-child(2),
+.footer-navigation__item:nth-child(3),
+.footer-navigation__item:nth-child(4) {
+  margin-right: 22.5%;
 }
 
 .footer-navigation__item:not(:last-child) {
@@ -69,5 +83,9 @@
 
   &:hover {
     color: #ffffff;
+  }
+
+  &:active {
+    color: #00b2ff;
   }
 }

@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 50px 18.2% 55px 18.2%;
+  padding: 50px 8.2% 55px 18.2%;
 
   @media (max-width: $vp-1023) {
     padding: 52px 4.9% 55px 6%;
@@ -33,7 +33,7 @@
 }
 
 .footer__social {
-  margin: 0 9.1% 0 0;
+  margin: 0 4.8% 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 0 35px 0;
@@ -46,7 +46,7 @@
 
 
 .footer__navigation {
-  margin: 1% 2.4% 0 0;
+  margin: 4px 2.6% 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 12.8% 0 0;
@@ -58,7 +58,7 @@
 }
 
 .footer__contacts {
-  margin: 1% 0 0 0;
+  margin: 4px 0 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0;

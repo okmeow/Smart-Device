@@ -1,5 +1,5 @@
 .footer-contacts {
-  width: 28.3%;
+  width: 23.3%;
   @media (max-width: $vp-767) {
     width: 100%;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
@@ -54,6 +54,10 @@
 
   &:hover {
     color: #ffffff;
+  }
+
+  &:active {
+    color: #00b2ff;
   }
 
   @media (max-width: $vp-767) {
