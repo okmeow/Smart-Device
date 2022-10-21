@@ -7,6 +7,12 @@
   }
 }
 
+.footer-contacts__wrapper {
+  @media (max-width: $vp-1023) {
+    min-width: 320px;
+  }
+}
+
 .footer-contacts__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;

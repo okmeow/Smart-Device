@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {aboutButtonClickHandler} from './modules/about.js'
 import {mobileFooterNavClickHandler, mobileFooterContactsClickHandler} from './modules/footer-menu.js'
+import {addScrollToFeedback} from './modules/scroll-to-feedback.js'
 import {telMask} from './modules/tel-mask.js'
 // ---------------------------------
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   telMask();
   mobileFooterNavClickHandler();
   mobileFooterContactsClickHandler();
+  addScrollToFeedback();
 
   // const footerUl = document.querySelector('.footer-navigation__list')
 
