@@ -1,12 +1,12 @@
-const footerNav = document.querySelector('.footer-navigation__list');
+const footerNavLists = document.querySelectorAll('.footer-navigation__list');
 const footerNavTitle = document.querySelector('.footer-navigation__title');
 const footerContacts = document.querySelector('.footer-contacts__wrapper');
 const footerContactsTitle = document.querySelector('.footer-contacts__title');
 
 // footer navigation
 
-footerNav.classList.remove('footer-navigation__list--nojs');
-footerNav.classList.remove('footer-navigation__list--opened');
+footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--nojs'));
+footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--opened'));
 
 const openFooterNav = () => {
   if (footerContacts.classList.contains('footer-contacts__wrapper--opened')) {
@@ -14,17 +14,17 @@ const openFooterNav = () => {
   }
   footerNavTitle.classList.add('footer-navigation__title--opened');
   footerNavTitle.classList.remove('footer-navigation__title--closed');
-  footerNav.classList.add('footer-navigation__list--opened');
+  footerNavLists.forEach((item) => item.classList.add('footer-navigation__list--opened'));
 }
 
 const closeFooterNav = () => {
-  footerNav.classList.remove('footer-navigation__list--opened');
+  footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--opened'));
   footerNavTitle.classList.remove('footer-navigation__title--opened');
   footerNavTitle.classList.add('footer-navigation__title--closed');
 }
 
 const toggleFooterNav = () => {
-  if (footerNav.classList.contains('footer-navigation__list--opened')) {
+  if (footerNavLists[0].classList.contains('footer-navigation__list--opened')) {
     return closeFooterNav();
   }
   return openFooterNav();
@@ -40,7 +40,7 @@ footerContacts.classList.remove('footer-contacts__wrapper--nojs');
 footerContacts.classList.remove('footer-contacts__wrapper--opened');
 
 const openFooterContacts = () => {
-  if (footerNav.classList.contains('footer-navigation__list--opened')) {
+  if (footerNavLists[0].classList.contains('footer-navigation__list--opened')) {
     closeFooterNav();
   }
   footerContactsTitle.classList.add('footer-contacts__title--opened');
