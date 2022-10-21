@@ -65,3 +65,11 @@
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+.is-shown {
+  display: inline;
+}
+
+.is-hidden {
+  display: none;
+}

@@ -20,6 +20,32 @@
     padding: 20px 177px 20px 8%;
     margin: 0;
     cursor: pointer;
+
+    &:hover {
+      color: #00b2ff;
+    }
+
+    &:active {
+      color: #74d5ff;
+    }
+  }
+}
+
+.footer-contacts__wrapper {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.footer-contacts__wrapper--opened {
+  @media (max-width: $vp-767) {
+    display: block;
+  }
+}
+
+.footer-contacts__wrapper--nojs {
+  @media (max-width: $vp-767) {
+    display: block;
   }
 }
 
