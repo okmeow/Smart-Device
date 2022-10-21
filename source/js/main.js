@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {aboutButtonClickHandler} from './modules/about.js'
+import {telMask} from './modules/tel-mask.js'
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -8,6 +9,23 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   aboutButtonClickHandler();
+  telMask();
+
+
+
+  const footerUl = document.querySelector('.footer-navigation__list')
+
+  const breakpoint = window.matchMedia(`(max-width:767px)`);
+  const breakpointChecker = () => {
+    if (breakpoint.matches) {
+      console.log('yes')
+      footerUl.classList.add('is-hidden');
+    } else {
+      console.log('ne dobavlu')
+    }
+  };
+  breakpoint.addListener(breakpointChecker);
+  breakpointChecker();
 
 
 
