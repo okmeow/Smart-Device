@@ -1,18 +1,20 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import {aboutButtonClickHandler} from './modules/about.js'
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
 
-  iosVhFix();
+  aboutButtonClickHandler();
 
+
+
+
+  iosVhFix();
   // Modules
   // ---------------------------------
-
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
@@ -20,9 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// const showMoreButton = document.getAttribute('show-more')
-// console.log(showMoreButton);
-// const hiddenAboutCompany = document.querySelector('.about__description--extra');
 
 // const showExtraText = () => {
 //   hiddenAboutCompany.classList.remove('about__description--hidden');

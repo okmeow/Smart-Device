@@ -17,6 +17,8 @@
   margin: 0 auto;;
   padding: 60px 18% 120px 31.3%;
   background: url("../img/year2022.png") 19.8% 60px no-repeat;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $vp-768) {
     @media (min-resolution: 2dppx) {
@@ -76,7 +78,11 @@
   }
 }
 
-.about__additional-description {
+.is-shown {
+  display: inline;
+}
+
+.is-hidden {
   display: none;
 }
 
@@ -97,6 +103,8 @@
   border-radius: 3px;
   cursor: pointer;
   user-select: none;
+  align-self: flex-start;
+  min-width: 180px;
 
   @media (max-width: $vp-1023) {
     margin: 5px 0 0 0;
@@ -106,6 +114,7 @@
   @media (max-width: $vp-767) {
     margin: 0;
     padding: 7px 39px 11px 39px;
+    min-width: 160px;
   }
 
   &:hover {
