@@ -12,11 +12,15 @@ const openFooterNav = () => {
   if (footerContacts.classList.contains('footer-contacts__wrapper--opened')) {
     closeFooterContacts();
   }
-  footerNav.classList.add('footer-navigation__list--opened')
+  footerNavTitle.classList.add('footer-navigation__title--opened');
+  footerNavTitle.classList.remove('footer-navigation__title--closed');
+  footerNav.classList.add('footer-navigation__list--opened');
 }
 
 const closeFooterNav = () => {
-  footerNav.classList.remove('footer-navigation__list--opened')
+  footerNav.classList.remove('footer-navigation__list--opened');
+  footerNavTitle.classList.remove('footer-navigation__title--opened');
+  footerNavTitle.classList.add('footer-navigation__title--closed');
 }
 
 const toggleFooterNav = () => {
@@ -39,11 +43,15 @@ const openFooterContacts = () => {
   if (footerNav.classList.contains('footer-navigation__list--opened')) {
     closeFooterNav();
   }
-  footerContacts.classList.add('footer-contacts__wrapper--opened')
+  footerContactsTitle.classList.add('footer-contacts__title--opened');
+  footerContactsTitle.classList.remove('footer-contacts__title--closed');
+  footerContacts.classList.add('footer-contacts__wrapper--opened');
 }
 
 function closeFooterContacts () {
-  footerContacts.classList.remove('footer-contacts__wrapper--opened')
+  footerContactsTitle.classList.remove('footer-contacts__title--opened');
+  footerContactsTitle.classList.add('footer-contacts__title--closed');
+  footerContacts.classList.remove('footer-contacts__wrapper--opened');
 }
 
 const toggleFooterContacts = () => {
