@@ -5,6 +5,7 @@ const footerContactsTitle = document.querySelector('.footer-contacts__title');
 
 // footer navigation
 
+footerNavTitle.classList.remove('footer-navigation__title--nojs');
 footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--nojs'));
 footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--opened'));
 
@@ -36,6 +37,7 @@ const mobileFooterNavClickHandler = () => {
 
 //footer contacts
 
+footerContactsTitle.classList.remove('footer-contacts__title--nojs');
 footerContacts.classList.remove('footer-contacts__wrapper--nojs');
 footerContacts.classList.remove('footer-contacts__wrapper--opened');
 

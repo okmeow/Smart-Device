@@ -80,6 +80,20 @@
   }
 }
 
+.footer-contacts__title--nojs {
+  @media (max-width: $vp-767) {
+    &::before {
+      content: "";
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+    }
+  }
+}
+
 .footer-contacts__wrapper {
   @media (max-width: $vp-767) {
     display: none;
