@@ -1,15 +1,5 @@
 .page {
-  min-width: 1920px;
-  height: 100%;
   scroll-behavior: smooth;
-
-  @media (max-width: $vp-1023) {
-    min-width: 770px;
-  }
-
-  @media (max-width: $vp-767) {
-    min-width: 320px;
-  }
 }
 
 .page__body {

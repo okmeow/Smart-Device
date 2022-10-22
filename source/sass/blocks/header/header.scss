@@ -1,10 +1,16 @@
 .header {
   width: 100vw;
   min-width: $vp-1024;
+  max-width: 2800px;
+  margin: 0 auto;
   position: fixed;
   top: 0;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   z-index: 2;
+
+  @media (min-width: 2800px) {
+    left: calc((100vw - 2800px)/2);
+  }
 
   @media (max-width: $vp-1023) {
     min-width: 768px;

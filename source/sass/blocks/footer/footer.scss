@@ -2,15 +2,15 @@
   background-color: #041827;
   width: 100vw;
   min-width: $vp-1024;
+  max-width: 2800px;
+  margin: 0 auto;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
-    max-width: $vp-1023;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
-    max-width: 767px;
   }
 }
 

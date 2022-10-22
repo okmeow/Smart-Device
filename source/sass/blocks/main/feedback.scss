@@ -2,6 +2,7 @@
   background: linear-gradient(139.2deg, #026693 33.5%, #00b3ff 31.5%);
   width: 100vw;
   min-width: $vp-1024;
+  max-width: 2800px;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;

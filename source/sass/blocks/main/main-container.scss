@@ -1,6 +1,7 @@
 .main-container {
   width: 100vw;
   min-width: $vp-1024;
+  max-width: 2800px;
   margin: 0 auto;
 
   @media (max-width: $vp-1023) {
