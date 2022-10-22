@@ -35,6 +35,6 @@ function telMask () {
   input.addEventListener("keydown", mask, false);
 
   });
-}
+};
 
-export {telMask}
+export {telMask};

@@ -13,6 +13,6 @@ const addScrollToFeedback = () => {
       })
     })
   };
-}
+};
 
-export {addScrollToFeedback}
+export {addScrollToFeedback};

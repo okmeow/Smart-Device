@@ -29,11 +29,11 @@ const toggleFooterNav = () => {
     return closeFooterNav();
   }
   return openFooterNav();
-}
+};
 
 const mobileFooterNavClickHandler = () => {
   return footerNavTitle.addEventListener('click', toggleFooterNav);
-}
+};
 
 //footer contacts
 
@@ -48,23 +48,23 @@ const openFooterContacts = () => {
   footerContactsTitle.classList.add('footer-contacts__title--opened');
   footerContactsTitle.classList.remove('footer-contacts__title--closed');
   footerContacts.classList.add('footer-contacts__wrapper--opened');
-}
+};
 
 function closeFooterContacts () {
   footerContactsTitle.classList.remove('footer-contacts__title--opened');
   footerContactsTitle.classList.add('footer-contacts__title--closed');
   footerContacts.classList.remove('footer-contacts__wrapper--opened');
-}
+};
 
 const toggleFooterContacts = () => {
   if (footerContacts.classList.contains('footer-contacts__wrapper--opened')) {
     return closeFooterContacts();
   }
   return openFooterContacts();
-}
+};
 
 const mobileFooterContactsClickHandler = () => {
   return footerContactsTitle.addEventListener('click', toggleFooterContacts);
-}
+};
 
-export {mobileFooterNavClickHandler, mobileFooterContactsClickHandler}
+export {mobileFooterNavClickHandler, mobileFooterContactsClickHandler};

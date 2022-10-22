@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {aboutButtonClickHandler} from './modules/about.js'
+import {modalFormToggler} from './modules/modal.js'
 import {mobileFooterNavClickHandler, mobileFooterContactsClickHandler} from './modules/footer-menu.js'
 import {addScrollToFeedback} from './modules/scroll-to-feedback.js'
 import {telMask} from './modules/tel-mask.js'
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mobileFooterNavClickHandler();
   mobileFooterContactsClickHandler();
   addScrollToFeedback();
+  modalFormToggler();
 
   // const footerUl = document.querySelector('.footer-navigation__list')
 
@@ -41,7 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-
   });
 });
 
