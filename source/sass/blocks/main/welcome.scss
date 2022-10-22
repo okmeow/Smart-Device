@@ -1,7 +1,6 @@
 .welcome {
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2800px;
   background-color: #25313d;
   background: url("../img/welcome-background.jpg");
   background-position: center;
@@ -39,8 +38,12 @@
 .welcome__wrapper {
   width: 100%;
   margin: 0 auto;
-  max-width: 2600px;
+  max-width: 1920px;
   padding: 305px 5% 278px 24.7%;
+
+  @media (min-width: 1921px) {
+    padding: 305px 100px 278px 475px;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 180px 6.5% 204px 6.5%;

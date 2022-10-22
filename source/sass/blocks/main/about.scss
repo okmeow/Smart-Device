@@ -1,7 +1,6 @@
 .about {
   width: 100vw;
   min-width: $vp-1024;
-  max-width: 2800px;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
@@ -14,12 +13,16 @@
 
 .about__wrapper {
   width: 100%;
-  max-width: 2600px;
-  margin: 0 auto;;
+  max-width: 1920px;
+  margin: 0 auto;
   padding: 60px 18% 120px 31.3%;
   background: url("../img/year2022.png") 19.8% 60px no-repeat;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1921px) {
+    padding: 60px 345px 120px 600px;
+  }
 
   @media (min-width: $vp-768) {
     @media (min-resolution: 2dppx) {
