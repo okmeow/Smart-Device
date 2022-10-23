@@ -137,13 +137,9 @@
 }
 
 .footer-navigation__item {
-  min-width: 105%;
+  min-width: 107%;
   margin-right: 23.5%;
   margin-bottom: 5px;
-
-  @media (max-width: $vp-1023) {
-    min-width: 107%;
-  }
 }
 
 .footer-navigation__link {
