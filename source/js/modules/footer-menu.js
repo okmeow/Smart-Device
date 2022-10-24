@@ -3,6 +3,13 @@ const footerNavTitle = document.querySelector('[data-footer-navigation-title="fo
 const footerContacts = document.querySelector('[data-footer-contacts-wrapper="footer-contacts-wrapper"]');
 const footerContactsTitle = document.querySelector('[data-footer-contacts-title="footer-contacts-title"]');
 
+const breakpoint = window.matchMedia(`(max-width:767px)`);
+
+if (breakpoint.matches) {
+  footerNavTitle.tabIndex="0";
+  footerContactsTitle.tabIndex="0";
+}
+
 // footer navigation
 
 footerNavTitle.classList.remove('footer-navigation__title--nojs');
