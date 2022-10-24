@@ -118,7 +118,11 @@
   }
 
   @media (max-width: $vp-767) {
-    display: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 35px;
+    margin: 0;
   }
 
   &:hover {
@@ -129,18 +133,5 @@
   &:active {
     outline: 2px solid #00b2ff;
     outline-offset: 1px;
-  }
-}
-
-.welcome__button--mobile {
-  display: none;
-
-  @media (max-width: $vp-767) {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 12px 35px;
-    display: inline-block;
-    margin: 0;
   }
 }

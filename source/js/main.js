@@ -4,10 +4,12 @@ import {aboutButtonClickHandler} from './modules/about.js'
 import {modalFormHandler} from './modules/modal.js'
 import {mobileFooterNavClickHandler, mobileFooterContactsClickHandler} from './modules/footer-menu.js'
 import {telMask} from './modules/tel-mask.js'
+import {breakpointChecker} from './modules/breakpoint-checker.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
+  breakpointChecker();
   aboutButtonClickHandler();
   telMask();
   mobileFooterNavClickHandler();
