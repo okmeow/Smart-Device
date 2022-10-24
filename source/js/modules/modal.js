@@ -6,6 +6,7 @@ const modalFormInputs = document.querySelectorAll('[data-modal-inout="modal-inpu
 const closeModalForm = () => {
   modalForm.classList.add('modal--close');
   document.removeEventListener('keydown', onModalFormEscKeydown);
+  document.removeEventListener('mouseup', clickOutsideCloseModalForm);
   document.querySelector(".page__body").style.overflow = 'scroll';
 };
 
@@ -14,6 +15,7 @@ const openModalForm = (evt) => {
   modalForm.classList.remove('modal--close');
   document.addEventListener('keydown', onModalFormEscKeydown);
   closeModalFormButton.addEventListener('click', closeModalForm);
+  document.addEventListener('mouseup', clickOutsideCloseModalForm);
   modalFormInputs[0].focus();
   document.querySelector(".page__body").style.overflow = 'hidden';
 };
@@ -25,6 +27,13 @@ function onModalFormEscKeydown (evt) {
     evt.preventDefault();
     closeModalForm();
   }
+};
+
+function clickOutsideCloseModalForm (evt) {
+  if (evt.target.classList.contains('modal')) {
+    return closeModalForm();
+  };
+  return evt;
 };
 
 const modalFormHandler = () => {
