@@ -29,24 +29,16 @@
     padding: 30px 158px 35px 350px;
   }
 
-  @media (max-width: 1800px) {
-    padding: 30px 8% 30px 18.2%;
+  @media (max-width: 1820px) {
+    padding: 30px 8% 35px 17.2%;
   }
 
   @media (max-width: 1500px) {
-    padding: 30px 5% 30px 15.2%;
+    padding: 30px 5% 35px 13.2%;
   }
 
   @media (max-width: 1300px) {
-    padding: 30px 5% 30px 14.2%;
-  }
-
-  @media (max-width: 1260px) {
-    padding: 30px 5% 30px 13.2%;
-  }
-
-  @media (max-width: 1220px) {
-    padding: 30px 5% 30px 10.2%;
+    padding: 30px 4% 35px 10%;
   }
 
   @media (max-width: $vp-1023) {
@@ -70,7 +62,7 @@
   }
 
   @media (max-width: $vp-1023) {
-    margin: 0 51% 0 0;
+    margin: 0 10% 0 0;
   }
 
   @media (max-width: $vp-767) {

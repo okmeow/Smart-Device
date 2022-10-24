@@ -2,12 +2,18 @@ const callMeButton = document.querySelector('[data-header-call-me-button="header
 const closeModalFormButton = document.querySelector('[data-modal-close-button="modal-close-button"]');
 const modalForm = document.querySelector('[data-modal="modal"]');
 const modalFormInputs = document.querySelectorAll('[data-modal-inout="modal-input"]');
+const header = document.querySelector('[data-header="header"]');
+const mainContainer = document.querySelector('[data-main-container="main-container"]');
+const footer = document.querySelector('[data-footer="footer"]');
 
 const closeModalForm = () => {
   modalForm.classList.add('modal--close');
   document.removeEventListener('keydown', onModalFormEscKeydown);
   document.removeEventListener('mouseup', clickOutsideCloseModalForm);
   document.querySelector(".page__body").style.overflow = 'scroll';
+  header.removeAttribute('inert');
+  mainContainer.removeAttribute('inert');
+  footer.removeAttribute('inert');
 };
 
 const openModalForm = (evt) => {
@@ -18,6 +24,9 @@ const openModalForm = (evt) => {
   document.addEventListener('mouseup', clickOutsideCloseModalForm);
   modalFormInputs[0].focus();
   document.querySelector(".page__body").style.overflow = 'hidden';
+  header.inert = "true";
+  mainContainer.inert = "true";
+  footer.inert = "true";
 };
 
 const isEscapeKey = (evt) => evt.key === 'Escape';

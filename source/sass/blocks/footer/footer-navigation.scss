@@ -140,6 +140,16 @@
   min-width: 107%;
   margin-right: 23.5%;
   margin-bottom: 5px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 107%;
+    margin-right: 23.5%;
+    margin-bottom: 5px;
+  }
 }
 
 .footer-navigation__link {
