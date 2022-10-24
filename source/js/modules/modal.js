@@ -9,9 +9,11 @@ const closeModalForm = () => {
   document.querySelector(".page__body").style.overflow = 'scroll';
 };
 
-const openModalForm = () => {
+const openModalForm = (evt) => {
+  evt.preventDefault();
   modalForm.classList.remove('modal--close');
   document.addEventListener('keydown', onModalFormEscKeydown);
+  closeModalFormButton.addEventListener('click', closeModalForm);
   modalFormInputs[0].focus();
   document.querySelector(".page__body").style.overflow = 'hidden';
 };
@@ -25,9 +27,8 @@ function onModalFormEscKeydown (evt) {
   }
 };
 
-const modalFormToggler = () => {
+const modalFormHandler = () => {
   callMeButton.addEventListener('click', openModalForm);
-  closeModalFormButton.addEventListener('click', closeModalForm);
 };
 
-export {modalFormToggler};
+export {modalFormHandler};
