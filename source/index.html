@@ -110,7 +110,7 @@
           <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии c 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.<span class="about__extra-description" data-about-extra-description = "about-extra-description"> Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
           <p class="about__description about__additional-description is-hidden" data-about-additional-description = "about-additional-description"> Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.<br>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
-          <button class="about__button" type="button" data-show-more="show-more">Подробнее</button>
+          <button class="about__button about__button--nojs" type="button" data-show-more="show-more">Подробнее</button>
         </div>
       </section>
 
@@ -149,7 +149,7 @@
                 <input class="feedback__input" type="text" placeholder="Имя" name="name" required>
               </label>
               <label class="feedback__label">
-                <input class="feedback__input input-phone" placeholder="Телефон" name="phone" required>
+                <input class="feedback__input input-phone" placeholder="Телефон" name="phone" min="7220000000000" required>
               </label>
               <label class="feedback__label feedback__label--textarea">
                 <textarea class="feedback__textarea" placeholder="Ваш вопрос" name="question"></textarea>
@@ -276,6 +276,6 @@
       </div>
     </section>
     <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <!-- <script src="js/main.min.js"></script> -->
   </body>
 </html>

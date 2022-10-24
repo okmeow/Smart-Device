@@ -2,6 +2,8 @@ const showMoreButton = document.querySelector('[data-show-more="show-more"]')
 const hiddenMobileAboutCompany = document.querySelector('[data-about-extra-description]');
 const hiddenAdditionalAboutCompany = document.querySelector('[data-about-additional-description]');
 
+showMoreButton.classList.remove('about__button--nojs');
+
 const showExtraText = () => {
   hiddenMobileAboutCompany.classList.remove('is-hidden');
   hiddenAdditionalAboutCompany.classList.remove('is-hidden');
