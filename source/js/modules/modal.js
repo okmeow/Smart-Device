@@ -5,25 +5,25 @@ const modalFormInputs = document.querySelectorAll('[data-modal-inout="modal-inpu
 const header = document.querySelector('[data-header="header"]');
 const mainContainer = document.querySelector('[data-main-container="main-container"]');
 const footer = document.querySelector('[data-footer="footer"]');
+const body = document.querySelector('[data-body="body"]');
 
 const closeModalForm = () => {
   modalForm.classList.add('modal--close');
   document.removeEventListener('keydown', onModalFormEscKeydown);
-  document.removeEventListener('mouseup', clickOutsideCloseModalForm);
-  document.querySelector(".page__body").style.overflow = 'scroll';
+  document.removeEventListener('mouseup', clickOutsideModalForm);
+  body.style.overflow = 'scroll';
   header.removeAttribute('inert');
   mainContainer.removeAttribute('inert');
   footer.removeAttribute('inert');
 };
 
-const openModalForm = (evt) => {
-  evt.preventDefault();
+const openModalForm = () => {
   modalForm.classList.remove('modal--close');
   document.addEventListener('keydown', onModalFormEscKeydown);
   closeModalFormButton.addEventListener('click', closeModalForm);
-  document.addEventListener('mouseup', clickOutsideCloseModalForm);
+  document.addEventListener('mouseup', clickOutsideModalForm);
   modalFormInputs[0].focus();
-  document.querySelector(".page__body").style.overflow = 'hidden';
+  body.style.overflow = 'hidden';
   header.inert = "true";
   mainContainer.inert = "true";
   footer.inert = "true";
@@ -38,7 +38,7 @@ function onModalFormEscKeydown (evt) {
   }
 };
 
-function clickOutsideCloseModalForm (evt) {
+function clickOutsideModalForm (evt) {
   if (evt.target.classList.contains('modal')) {
     return closeModalForm();
   };
@@ -46,6 +46,7 @@ function clickOutsideCloseModalForm (evt) {
 };
 
 const modalFormHandler = () => {
+  callMeButton.href="#";
   callMeButton.addEventListener('click', openModalForm);
 };
 
