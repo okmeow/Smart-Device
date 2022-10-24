@@ -1,7 +1,7 @@
-const callMeButton = document.querySelector('.header__call-me-button');
-const closeModalFormButton = document.querySelector('.modal__close-button');
-const modalForm = document.querySelector('.modal');
-const modalFormInputs = document.querySelectorAll('.modal__input');
+const callMeButton = document.querySelector('[data-header-call-me-button="header-call-me-button"]');
+const closeModalFormButton = document.querySelector('[data-modal-close-button="modal-close-button"]');
+const modalForm = document.querySelector('[data-modal="modal"]');
+const modalFormInputs = document.querySelectorAll('[data-modal-inout="modal-input"]');
 
 const closeModalForm = () => {
   modalForm.classList.add('modal--close');

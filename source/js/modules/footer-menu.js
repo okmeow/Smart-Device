@@ -1,7 +1,7 @@
-const footerNavLists = document.querySelectorAll('.footer-navigation__list');
-const footerNavTitle = document.querySelector('.footer-navigation__title');
-const footerContacts = document.querySelector('.footer-contacts__wrapper');
-const footerContactsTitle = document.querySelector('.footer-contacts__title');
+const footerNavLists = document.querySelectorAll('[data-footer-navigation-list="footer-navigation-list"]');
+const footerNavTitle = document.querySelector('[data-footer-navigation-title="footer-navigation-title"]');
+const footerContacts = document.querySelector('[data-footer-contacts-wrapper="footer-contacts-wrapper"]');
+const footerContactsTitle = document.querySelector('[data-footer-contacts-title="footer-contacts-title"]');
 
 // footer navigation
 

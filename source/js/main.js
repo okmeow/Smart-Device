@@ -4,53 +4,19 @@ import {aboutButtonClickHandler} from './modules/about.js'
 import {modalFormHandler} from './modules/modal.js'
 import {mobileFooterNavClickHandler, mobileFooterContactsClickHandler} from './modules/footer-menu.js'
 import {telMask} from './modules/tel-mask.js'
-// ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  // Utils
-  // ---------------------------------
+  iosVhFix();
 
   aboutButtonClickHandler();
   telMask();
   mobileFooterNavClickHandler();
   mobileFooterContactsClickHandler();
   modalFormHandler();
-
-  // const footerUl = document.querySelector('.footer-navigation__list')
-
-  // const breakpoint = window.matchMedia(`(min-width:767px)`);
-  // console.log(breakpoint);
-  // const breakpointChecker = () => {
-  //   if (breakpoint.matches) {
-  //     console.log('yes')
-  //     footerUl.classList.add('is-hidden');
-  //   } else {
-  //     // console.log('ne dobavlu')
-  //   }
-  // };
-//
-  // breakpoint.addListener(breakpointChecker);
-  // breakpointChecker();
-
-
-
-  iosVhFix();
-  // Modules
-  // ---------------------------------
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
   });
 });
-
-
-// const showExtraText = () => {
-//   hiddenAboutCompany.classList.remove('about__description--hidden');
-// }
-
-// showMoreButton.addEventListener('click', showExtraText);
-
 
 // ---------------------------------
 
