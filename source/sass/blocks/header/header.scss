@@ -98,14 +98,14 @@
 }
 
 .header__icon-link {
-  color: #f2f5f7;
+  color: #00b2ff;
 
   &:hover {
-    color: #00b2ff;
+    color: #4bc9ff;
   }
 
   &:active {
-    color: #59cdff;
+    color: #ffffff;
   }
 }
 
@@ -125,6 +125,7 @@
 
 .header__email {
   display: inline-block;
+  color: #f2f5f7;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -138,6 +139,7 @@
 }
 
 .header__phone {
+  color: #f2f5f7;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -147,6 +149,14 @@
   @media (max-width: $vp-1023) {
     display: none;
   }
+}
+
+.header__icon-link:hover .header__email {
+  color: #00b2ff;
+}
+
+.header__icon-link:hover .header__phone {
+  color: #00b2ff;
 }
 
 .header__call-me-button {
