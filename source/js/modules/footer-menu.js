@@ -4,11 +4,17 @@ const footerContacts = document.querySelector('[data-footer-contacts-wrapper="fo
 const footerContactsTitle = document.querySelector('[data-footer-contacts-title="footer-contacts-title"]');
 
 const breakpoint = window.matchMedia(`(max-width:767px)`);
-
-if (breakpoint.matches) {
-  footerNavTitle.tabIndex="0";
-  footerContactsTitle.tabIndex="0";
+const breakpointChecker = () => {
+  if (breakpoint.matches) {
+    footerNavTitle.tabIndex="0";
+    footerContactsTitle.tabIndex="0";
+  } else {
+    footerNavTitle.tabIndex="-1";
+    footerContactsTitle.tabIndex="-1";
+  }
 }
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
 
 // footer navigation
 
