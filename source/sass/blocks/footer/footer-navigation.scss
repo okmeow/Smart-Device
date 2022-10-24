@@ -30,6 +30,11 @@
     margin: 0;
     cursor: pointer;
 
+    &:focus {
+      color: #00b2ff;
+      outline: 2px solid #00b2ff;
+    }
+
     &:hover {
       color: #00b2ff;
     }

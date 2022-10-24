@@ -9,6 +9,20 @@ footerNavTitle.classList.remove('footer-navigation__title--nojs');
 footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--nojs'));
 footerNavLists.forEach((item) => item.classList.remove('footer-navigation__list--opened'));
 
+const isEnterKey = (evt) => evt.key === 'Enter';
+
+const onFooterNavTitleEnterKeydown = (evt) => {
+  if (isEnterKey(evt)) {
+    evt.preventDefault();
+    if (footerNavTitle.classList.contains('footer-navigation__title--opened')) {
+      return closeFooterNav();
+    }
+    return openFooterNav();
+  }
+};
+
+footerNavTitle.addEventListener('keydown', onFooterNavTitleEnterKeydown);
+
 const openFooterNav = () => {
   if (footerContacts.classList.contains('footer-contacts__wrapper--opened')) {
     closeFooterContacts();
@@ -40,6 +54,18 @@ const mobileFooterNavClickHandler = () => {
 footerContactsTitle.classList.remove('footer-contacts__title--nojs');
 footerContacts.classList.remove('footer-contacts__wrapper--nojs');
 footerContacts.classList.remove('footer-contacts__wrapper--opened');
+
+const onFooterContactsTitleEnterKeydown = (evt) => {
+  if (isEnterKey(evt)) {
+    evt.preventDefault();
+    if (footerContactsTitle.classList.contains('footer-contacts__title--opened')) {
+      return closeFooterContacts();
+    }
+    return openFooterContacts();
+  }
+};
+
+footerContactsTitle.addEventListener('keydown', onFooterContactsTitleEnterKeydown);
 
 const openFooterContacts = () => {
   if (footerNavLists[0].classList.contains('footer-navigation__list--opened')) {
