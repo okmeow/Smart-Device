@@ -134,6 +134,7 @@
 .modal__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
+  vertical-align: baseline;
   padding: 14px 57px;
   max-width: 465px;
   font-weight: 700;
@@ -219,6 +220,7 @@
 
 .modal__checkbox-mark {
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   border: 1px solid #ffffff;
   border-radius: 3px;
@@ -246,6 +248,7 @@
 
 .modal__checkbox-text {
   display: inline-block;
+  vertical-align: baseline;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -263,13 +266,3 @@
 .modal__label:hover .modal__checkbox-text {
   opacity: 1;
 }
-
-
-// &.is-active {
-//   transform: scale(1);
-//   visibility: visible;
-//   opacity: 1;
-
-//   pointer-events: auto;
-// }
-

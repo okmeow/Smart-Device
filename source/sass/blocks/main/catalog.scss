@@ -45,6 +45,7 @@
 
   @media (max-width: $vp-767) {
     display: inline-block;
+    vertical-align: baseline;
     font-size: 28px;
     line-height: 39px;
     padding: 0 8px 0 0;
@@ -191,6 +192,7 @@
 
 .catalog__link {
   display: inline-block;
+  vertical-align: baseline;
   box-sizing: border-box;
   margin: 0;
   padding: 45px calc(100% - 11.4% - 165px) 545px 11.4%;

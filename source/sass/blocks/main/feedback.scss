@@ -194,6 +194,7 @@
 .feedback__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
+  vertical-align: baseline;
   padding: 14px 20.8%;
   margin: 7px 0 0 0;
   max-width: 265px;
@@ -232,6 +233,7 @@
 
 .feedback__checkbox-mark {
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   border: 1px solid #ffffff;
   border-radius: 3px;
@@ -269,6 +271,7 @@
 
 .feedback__checkbox-text {
   display: inline-block;
+  vertical-align: baseline;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
