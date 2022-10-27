@@ -2,7 +2,7 @@
   width: 100vw;
   min-width: $vp-1024;
   background-color: #25313d;
-  background: url("../img/welcome-background.jpg");
+  background-image: url("../img/welcome-background.jpg");
   background-position: center;
 
   @media (min-width: $vp-1024) {
