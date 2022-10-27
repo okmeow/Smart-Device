@@ -59,7 +59,7 @@
   }
 }
 
-.modal__fieldset {
+.modal__form-wrapper fieldset {
   padding: 0;
   margin: 0;
   border: none;
@@ -67,7 +67,7 @@
   flex-direction: column;
 }
 
-.modal__input {
+.modal__label-wrapper input {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
   border: none;
@@ -95,7 +95,7 @@
   }
 }
 
-.modal__textarea {
+.modal__label-wrapper--textarea textarea {
   font-family: "PT Mono", "Arial", sans-serif;
   border: none;
   width: 420px;
@@ -126,12 +126,11 @@
   }
 }
 
-.modal__label {
+.modal__label-wrapper {
   position: relative;
-  cursor: pointer;
 }
 
-.modal__button {
+.modal__form-wrapper button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
   vertical-align: baseline;
@@ -228,9 +227,10 @@
   height: 15px;
   top: 5px;
   left: 10px;
+  cursor: pointer;
 }
 
-.modal__checkbox-field:checked + .modal__checkbox-mark {
+.modal__label-wrapper input:checked + .modal__checkbox-mark {
   &::after {
     content: "";
     display: block;
@@ -242,7 +242,7 @@
   }
 }
 
-.modal__checkbox-field:focus + .modal__checkbox-mark {
+.modal__label-wrapper input:focus + .modal__checkbox-mark {
   outline: 2px solid #041427;
 }
 
@@ -256,6 +256,7 @@
   color: #ffffff;
   opacity: 0.8;
   padding: 0 0 0 35px;
+  cursor: pointer;
 
   @media (max-width: $vp-767) {
     top: 5px;
@@ -263,6 +264,6 @@
   }
 }
 
-.modal__label:hover .modal__checkbox-text {
+.modal__label-wrapper:hover .modal__checkbox-text {
   opacity: 1;
 }
