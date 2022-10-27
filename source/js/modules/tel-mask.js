@@ -2,7 +2,7 @@
 // Внесены изменения под ТЗ
 
 function telMask () {
-  [].forEach.call( document.querySelectorAll('.input-phone'), (input) => {
+  [].forEach.call( document.querySelectorAll('[data-input-phone="input-phone"]'), (input) => {
   let keyCode;
   function mask (event) {
     event.keyCode && (keyCode = event.keyCode);

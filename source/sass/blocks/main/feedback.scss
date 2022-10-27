@@ -84,7 +84,7 @@
   }
 }
 
-.feedback__fieldset {
+.feedback__form-wrapper fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 30px;
@@ -109,7 +109,7 @@
   }
 }
 
-.feedback__input {
+.feedback__label-wrapper input {
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
   border: none;
@@ -143,7 +143,7 @@
   }
 }
 
-.feedback__textarea {
+.feedback__label-wrapper textarea {
   font-family: "PT Mono", "Arial", sans-serif;
   border: none;
   width: 100%;
@@ -182,16 +182,15 @@
   }
 }
 
-.feedback__label {
+.feedback__label-wrapper {
   position: relative;
-  cursor: pointer;
 }
 
-.feedback__label--textarea {
+.feedback__label-wrapper--textarea {
   grid-column: 1 / -1;
 }
 
-.feedback__button {
+.feedback__form-wrapper button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
   vertical-align: baseline;
@@ -241,6 +240,7 @@
   height: 15px;
   top: 29px;
   left: 10px;
+  cursor: pointer;
 
   @media (max-width: $vp-1023) {
     top: 10px;
@@ -253,7 +253,7 @@
   }
 }
 
-.feedback__checkbox-field:checked + .feedback__checkbox-mark {
+.feedback__label-wrapper input:checked + .feedback__checkbox-mark {
   &::after {
     content: "";
     display: block;
@@ -265,7 +265,7 @@
   }
 }
 
-.feedback__checkbox-field:focus + .feedback__checkbox-mark {
+.feedback__label-wrapper input:focus + .feedback__checkbox-mark {
   outline: 2px solid #041427;
 }
 
@@ -281,6 +281,7 @@
   padding: 0 0 0 35px;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 
   @media (max-width: $vp-1023) {
     padding: 0 0 0 35px;
@@ -294,6 +295,6 @@
   }
 }
 
-.feedback__label:hover .feedback__checkbox-text {
+.feedback__label-wrapper:hover .feedback__checkbox-text {
   opacity: 1;
 }
