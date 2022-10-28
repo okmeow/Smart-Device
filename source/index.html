@@ -11,31 +11,33 @@
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page__body" data-body="body">
+  <body data-body="body">
     <header class="header" data-header="header">
       <div>
-        <a class="header__logo-link">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/mobile/logo-mobile.svg">
-            <img src="img/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
-          </picture>
-        </a>
+        <div class="header__logo-link-wrapper">
+          <a>
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/mobile/logo-mobile.svg">
+              <img src="img/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
+            </picture>
+          </a>
+        </div>
         <section class="header__contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <a class="header__icon-link" href="mailto:info@sd.ru">
+          <a href="mailto:info@sd.ru">
             <svg class="header__icon" width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite/sprite.svg#header-email"></use>
             </svg>
             <span class="header__email">info@sd.ru</span>
           </a>
-          <a class="header__icon-link" href="tel:+74950005252">
+          <a href="tel:+74950005252">
             <svg class="header__icon" width="21" height="20" viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite/sprite.svg#header-phone"></use>
             </svg>
             <span class="header__phone">+7 (495) 000 52 52</span>
           </a>
         </section>
-        <a class="header__call-me-button" href="#feedback-form" data-header-call-me-button="header-call-me-button">Заказать звонок</a>
+        <a href="#feedback-form" data-header-call-me-button="header-call-me-button">Заказать звонок</a>
       </div>
     </header>
 
@@ -45,7 +47,7 @@
         <div>
           <h2 class="welcome__title">Печатные платы</h2>
           <p class="welcome__description">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="welcome__button" href="#feedback-form" data-welcome-button="welcome-button">Получить бесплатную консультацию</a>
+          <a href="#feedback-form" data-welcome-button="welcome-button">Получить бесплатную консультацию</a>
         </div>
       </section>
 
@@ -100,17 +102,17 @@
           <h2 class="catalog__title" data-catalog-title="catalog-title">Smart Device предлагает следующие товары и услуги</h2>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--produce">
-              <a class="catalog__link" href="#">
+              <a href="#">
                 <span class="catalog__link-text">Производство печатных плат</span>
               </a>
             </li>
             <li class="catalog__item catalog__item--installation">
-              <a class="catalog__link" href="#">
+              <a href="#">
                 <span class="catalog__link-text">Монтаж печатных плат</span>
               </a>
             </li>
             <li class="catalog__item catalog__item--components">
-              <a class="catalog__link" href="#">
+              <a href="#">
                 <span class="catalog__link-text">Комплектующие для светотехники</span>
               </a>
             </li>
@@ -164,14 +166,14 @@
       <div>
         <section class="footer__social social">
           <h3 class="visually-hidden">Социальные сети</h3>
-          <a class="social__logo-link" href="index.html">
+          <a href="index.html">
             <picture>
               <img src="img/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
             </picture>
           </a>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://htmlacademy.ru/study" target="_blank">
+              <a href="https://htmlacademy.ru/study" target="_blank">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite/sprite.svg#social-ok"></use>
                 </svg>
@@ -179,7 +181,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+              <a href="https://vk.com/htmlacademy" target="_blank">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite/sprite.svg#social-vk"></use>
                 </svg>
@@ -187,7 +189,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://ru.pinterest.com/pin/342695852890631631/" target="_blank">
+              <a href="https://ru.pinterest.com/pin/342695852890631631/" target="_blank">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite/sprite.svg#social-pinterest"></use>
                 </svg>
@@ -201,27 +203,27 @@
           <h3 class="footer-navigation__title footer-navigation__title--closed footer-navigation__title--nojs" data-footer-navigation-title="footer-navigation-title">Разделы сайта</h3>
           <ul class="footer-navigation__list footer-navigation__list--opened footer-navigation__list--nojs" data-footer-navigation-list="footer-navigation-list">
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">О Компании</a>
+              <a href="#">О Компании</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Продукты</a>
+              <a href="#">Продукты</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Производство печатных плат</a>
+              <a href="#">Производство печатных плат</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Монтаж печатных плат</a>
+              <a href="#">Монтаж печатных плат</a>
             </li>
           </ul>
           <ul class="footer-navigation__list footer-navigation__list--opened footer-navigation__list--nojs" data-footer-navigation-list="footer-navigation-list">
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Комплектующие</a>
+              <a href="#">Комплектующие</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Доставка</a>
+              <a href="#">Доставка</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </section>
@@ -230,9 +232,9 @@
           <h3 class="footer-contacts__title footer-contacts__title--closed footer-contacts__title--nojs" data-footer-contacts-title="footer-contacts-title">Наш офис</h3>
           <div class="footer-contacts__wrapper footer-contacts__wrapper--opened footer-contacts__wrapper--nojs" data-footer-contacts-wrapper="footer-contacts-wrapper">
             <p class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
-            <a class="footer-contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a class="footer-contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-            <a class="footer-contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
+            <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+            <a href="tel:+79253647813">+7 (925) 364-78-13</a>
           </div>
         </section>
       </div>

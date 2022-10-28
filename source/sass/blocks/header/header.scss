@@ -50,7 +50,7 @@
   }
 }
 
-.header__logo-link {
+.header__logo-link-wrapper {
   margin: 0 13.5% 0 0;
 
   @media (max-width: 1420px) {
@@ -97,7 +97,7 @@
   }
 }
 
-.header__icon-link {
+.header__contacts a {
   color: #00b2ff;
 
   &:hover {
@@ -109,7 +109,7 @@
   }
 }
 
-.header__icon-link:not(:last-child) {
+.header__contacts a:not(:last-child) {
   margin: 0 6.3vw 0 0;
 
   @media (max-width: $vp-1023) {
@@ -117,7 +117,7 @@
   }
 }
 
-.header__email + .header__icon-link {
+.header__email + .header__contacts a {
   @media (max-width: $vp-1023) {
     margin: 0;
   }
@@ -152,15 +152,15 @@
   }
 }
 
-.header__icon-link:hover .header__email {
+.header__contacts a:hover .header__email {
   color: #00b2ff;
 }
 
-.header__icon-link:hover .header__phone {
+.header__contacts a:hover .header__phone {
   color: #00b2ff;
 }
 
-.header__call-me-button {
+.header > div > a {
   display: block;
   padding: 10px 16px 12px 16px;
   color: #f2f5f7;
