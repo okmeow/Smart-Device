@@ -78,7 +78,7 @@
   }
 }
 
-.advantages__item-name {
+.advantages__item > p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #00b2ff;
   font-weight: 400;
@@ -96,7 +96,7 @@
   }
 }
 
-.advantages__item-name--price {
+.advantages__item--price > p {
   @media (min-width: $vp-767) {
     @media (max-width: $vp-1023) {
       margin: 0 0 2px 0;
@@ -104,7 +104,7 @@
   }
 }
 
-.advantages__item-description {
+.advantages__item-description-wrapper > p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -125,10 +125,6 @@
   border-left: 5px solid #00b2ff;
 }
 
-.advantages__item:hover .advantages__item-name {
-  color: #f2f5f7;
-}
-
-.advantages__item:hover .advantages__item-description {
+.advantages__item:hover p {
   color: #f2f5f7;
 }
