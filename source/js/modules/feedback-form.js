@@ -7,7 +7,6 @@ const feedbackInputPhone = document.querySelector('[data-input-feedback-phone="i
 const footerLogo = document.querySelector('[data-footer-logo="footer-logo"]');
 
 const isTabKey = (evt) => evt.key === 'Tab';
-const isShiftKey = (evt) => evt.key === 'Shift';
 
 const feedbackFormHandlers = () => {
   feedbackTextarea.addEventListener('keydown', (evt) => {
@@ -15,6 +14,10 @@ const feedbackFormHandlers = () => {
       evt.preventDefault();
       feedbackCheckbox.focus();
     };
+    if (evt.shiftKey && isTabKey(evt)) {
+      evt.preventDefault();
+      feedbackInputPhone.focus();
+    }
   });
 
   feedbackCheckbox.addEventListener('keydown', (evt) => {
@@ -22,6 +25,10 @@ const feedbackFormHandlers = () => {
       evt.preventDefault();
       feedbackButton.focus();
     };
+    if (evt.shiftKey && isTabKey(evt)) {
+      evt.preventDefault();
+      feedbackTextarea.focus();
+    }
   });
 
   feedbackButton.addEventListener('keydown', (evt) => {
@@ -29,12 +36,16 @@ const feedbackFormHandlers = () => {
       evt.preventDefault();
       footerLogo.focus();
     };
+    if (evt.shiftKey && isTabKey(evt)) {
+      evt.preventDefault();
+      feedbackCheckbox.focus();
+    }
   });
 
   footerLogo.addEventListener('keydown', (evt) => {
-    if (isShiftKey(evt)) {
+    if (evt.shiftKey && isTabKey(evt)) {
       evt.preventDefault();
-      feedbackInputPhone.focus();
+      feedbackButton.focus();
     }
   });
 };
