@@ -1905,6 +1905,12 @@ button,
   }
 }
 
+@media (min-width: 1024px) {
+  .catalog__item:last-child {
+    margin-bottom: 10px;
+  }
+}
+
 @media (min-width: 1920px) {
   .catalog__item {
     min-width: 350px;
