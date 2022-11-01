@@ -32,6 +32,10 @@
     }
   }
 
+  @media (max-width: 1300px) {
+    background-position: 17.8% 60px;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 15px 6.5% 80px 29.3%;
     background-position: 7% 20px;

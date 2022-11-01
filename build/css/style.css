@@ -1976,6 +1976,14 @@ button,
   .header__contacts {
     margin: 0 7% 0 0;
   }
+
+  .about > div {
+    background-position: 17.8% 60px;
+  }
+
+  .footer > div {
+    padding: 50px 8.2% 55px 14.2%;
+  }
 }
 
 @media (max-width: 1180px) {

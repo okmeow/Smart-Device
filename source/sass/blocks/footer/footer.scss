@@ -26,6 +26,10 @@
     padding: 50px 160px 55px 350px;
   }
 
+  @media (max-width: 1300px) {
+    padding: 50px 8.2% 55px 14.2%;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 52px 4.9% 55px 6%;
   }
