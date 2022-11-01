@@ -4,33 +4,30 @@
   background-color: #25313d;
   background-image: url("../img/welcome-background.jpg");
   background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
   @media (min-width: $vp-1024) {
     @media (min-resolution: 2dppx) {
       background-image: url("../img/welcome-background@2x.jpg");
-      background-size: 1920px auto;
     }
   }
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
     background-image: url("../img/tablet/welcome-background.jpg");
-    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/tablet/welcome-background@2x.jpg");
-      background-size: 100% auto;
     }
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
     background-image: url("../img/mobile/welcome-background.jpg");
-    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/welcome-background@2x.jpg");
-      background-size: 100% auto;
     }
   }
 }
