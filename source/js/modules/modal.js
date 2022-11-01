@@ -12,8 +12,10 @@ const body = document.querySelector('[data-body="body"]');
 const modalButton = document.querySelector('[data-modal-button="modal-button"]');
 const modalCheckbox = document.querySelector('[data-modal-checkbox="modal-checkbox"]');
 const modalTextarea = document.querySelector('[data-modal-textarea="modal-textarea"]');
+const modalInputPhone = document.querySelector('[data-input-modal-phone="input-phone"]');
 
 const isTabKey = (evt) => evt.key === 'Tab';
+const isShiftKey = (evt) => evt.key === 'Shift';
 
 const modalFormFocusHandlers = () => {
   modalTextarea.addEventListener('keydown', (evt) => {
@@ -35,6 +37,13 @@ const modalFormFocusHandlers = () => {
       evt.preventDefault();
       closeModalFormButton.focus();
     };
+  });
+
+  closeModalFormButton.addEventListener('keydown', (evt) => {
+    if (isShiftKey(evt)) {
+      evt.preventDefault();
+      modalInputPhone.focus();
+    }
   });
 };
 
