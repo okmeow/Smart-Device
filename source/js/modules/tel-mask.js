@@ -37,6 +37,9 @@ function telMask () {
     if (input.value.length < 5) {
       input.selectionStart = input.value.length;
     }
+    if (input.selectionStart < 5) {
+      input.selectionStart = 5;
+    }
   });
 
   });
