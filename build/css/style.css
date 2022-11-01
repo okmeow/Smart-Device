@@ -1797,6 +1797,7 @@ button,
   font-size: 16px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.7);
+  max-width: 180px;
 }
 
 .footer-contacts__wrapper > a:hover {
@@ -2789,8 +2790,9 @@ button,
   }
 
   .footer-contacts__wrapper > a {
-    padding: 0 25px 0 8%;
+    padding: 0 15px 0 8%;
     font-size: 14px;
+    max-width: 230px;
   }
 
   .footer-contacts__wrapper > a:last-child {
