@@ -1,5 +1,24 @@
 // Источник https://web-revenue.ru/verstka/maska-vvoda-telefona-v-input-na-js
 // Внесены изменения под ТЗ
+const inputPhoneFeedbackForm = document.querySelector('[data-input-feedback-phone="input-phone"]');
+const feedbackForm = document.querySelector('[data-feedback-form="feedback-form"]');
+const inputPhoneModalForm = document.querySelector('[data-input-modal-phone="input-phone"]');
+const modalForm = document.querySelector('[data-modal-form="modal-form"]');
+const MIN_PHONE_LENGTH = 18;
+
+feedbackForm.addEventListener('submit', (evt) => {
+  if (inputPhoneFeedbackForm.value.length < MIN_PHONE_LENGTH) {
+    evt.preventDefault();
+    inputPhoneFeedbackForm.focus();
+  }
+});
+
+modalForm.addEventListener('submit', (evt) => {
+  if (inputPhoneModalForm.value.length < MIN_PHONE_LENGTH) {
+    evt.preventDefault();
+    inputPhoneModalForm.focus();
+  }
+});
 
 function telMask () {
   [].forEach.call( document.querySelectorAll('[data-input-phone="input-phone"]'), (input) => {
@@ -44,5 +63,7 @@ function telMask () {
 
   });
 };
+
+
 
 export {telMask};
