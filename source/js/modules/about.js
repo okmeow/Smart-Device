@@ -15,7 +15,7 @@ const showExtraText = () => {
 const hideExtraText = () => {
   hiddenAdditionalAboutCompany.classList.add('is-hidden');
   hiddenAdditionalAboutCompany.classList.remove('is-shown');
-  showMoreButton.textContent = 'Подробнее'
+  showMoreButton.textContent = 'Подробнее';
 };
 
 const toggleExtraText = () => {
@@ -26,7 +26,7 @@ const toggleExtraText = () => {
 };
 
 const aboutButtonClickHandler = () => {
-  return showMoreButton.addEventListener('click', toggleExtraText)
+  return showMoreButton.addEventListener('click', toggleExtraText);
 };
 
 export {aboutButtonClickHandler};
