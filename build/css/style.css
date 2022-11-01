@@ -2343,7 +2343,7 @@ button,
   }
 
   .header__logo-link-wrapper {
-    margin: 0;
+    margin: 0 30px 0 0;
   }
 
   .header__logo-link-wrapper img {
@@ -2352,7 +2352,7 @@ button,
   }
 
   .header__contacts {
-    max-width: 150px;
+    max-width: 160px;
     margin: 0 17px 0 auto;
   }
 
