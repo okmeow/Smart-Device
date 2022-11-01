@@ -7,6 +7,44 @@ const mainContainer = document.querySelector('[data-main-container="main-contain
 const footer = document.querySelector('[data-footer="footer"]');
 const body = document.querySelector('[data-body="body"]');
 
+// Блок кода для изменений порядка фокуса на форме (Удалить, если нужен нормальный порядок фокуса)
+
+const modalButton = document.querySelector('[data-modal-button="modal-button"]');
+const modalCheckbox = document.querySelector('[data-modal-checkbox="modal-checkbox"]');
+const modalTextarea = document.querySelector('[data-modal-textarea="modal-textarea"]');
+
+const isTabKey = (evt) => evt.key === 'Tab';
+
+modalTextarea.addEventListener('keydown', (evt) => {
+  if (isTabKey(evt)) {
+    evt.preventDefault();
+    modalCheckbox.focus();
+  };
+});
+
+modalCheckbox.addEventListener('keydown', (evt) => {
+  if (isTabKey(evt)) {
+    evt.preventDefault();
+    modalButton.focus();
+  };
+});
+
+modalCheckbox.addEventListener('keydown', (evt) => {
+  if (isTabKey(evt)) {
+    evt.preventDefault();
+    modalButton.focus();
+  };
+});
+
+modalButton.addEventListener('keydown', (evt) => {
+  if (isTabKey(evt)) {
+    evt.preventDefault();
+    closeModalFormButton.focus();
+  };
+});
+
+// Конец блока для изменения порядка фокуса
+
 const closeModalForm = () => {
   modalForm.classList.add('modal--close');
   document.removeEventListener('keydown', onModalFormEscKeydown);
