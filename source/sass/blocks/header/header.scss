@@ -8,6 +8,7 @@
   z-index: 2;
 
   @media (max-width: $vp-1023) {
+    position: static;
     min-width: 768px;
   }
 
@@ -116,8 +117,11 @@
   margin: 0 5.7vw 0 0;
 
   @media (max-width: $vp-1023) {
+    margin: 0 32px 0 0;
+  }
+
+  @media (max-width: $vp-767) {
     margin: 0 35px 0 0;
-    margin: 0 6.3vw 0 0;
   }
 }
 
@@ -125,6 +129,11 @@
   @media (min-width: $vp-1023) {
     position: relative;
     top: 5px;
+  }
+
+  @media (min-width: $vp-767) {
+    position: relative;
+    top: -4px;
   }
 }
 

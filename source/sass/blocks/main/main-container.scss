@@ -6,9 +6,11 @@
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
+    margin: -95px auto 0 auto;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
+    margin: -70px auto 0 auto;
   }
 }

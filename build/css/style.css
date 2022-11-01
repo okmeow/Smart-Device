@@ -1852,6 +1852,13 @@ button,
   }
 */
 
+@media (min-width: 767px) {
+  .header__icon {
+    position: relative;
+    top: -4px;
+  }
+}
+
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
   .about > div {
     background-image: url("../img/year2022@2x.png");
@@ -1986,6 +1993,7 @@ button,
   }
 
   .header {
+    position: static;
     min-width: 768px;
   }
 
@@ -2003,8 +2011,7 @@ button,
   }
 
   .header__contacts a:not(:last-child) {
-    margin: 0 35px 0 0;
-    margin: 0 6.3vw 0 0;
+    margin: 0 32px 0 0;
   }
 
   .header__email + .header__contacts a {
@@ -2025,6 +2032,7 @@ button,
 
   .main-container {
     min-width: 768px;
+    margin: -95px auto 0 auto;
   }
 
   .welcome {
@@ -2339,8 +2347,13 @@ button,
     margin: 0 17px 0 auto;
   }
 
+  .header__contacts a:not(:last-child) {
+    margin: 0 35px 0 0;
+  }
+
   .main-container {
     min-width: 320px;
+    margin: -70px auto 0 auto;
   }
 
   .welcome {
