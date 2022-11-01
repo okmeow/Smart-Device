@@ -39,7 +39,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .modal p {
@@ -106,7 +106,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
   color: #ffffff;
 
   &::placeholder {
@@ -134,7 +134,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
   vertical-align: baseline;
-  padding: 14px 57px;
+  padding: 14px 57px 12px 57px;
   max-width: 465px;
   font-weight: 700;
   font-size: 16px;
@@ -148,7 +148,7 @@
   border-radius: 3px;
   cursor: pointer;
   user-select: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 
   @media (max-width: $vp-767) {
     max-width: 100%;

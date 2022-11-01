@@ -736,7 +736,7 @@ button,
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .modal p {
@@ -817,7 +817,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
   color: #ffffff;
 }
 
@@ -858,7 +858,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: inline-block;
   vertical-align: baseline;
-  padding: 14px 57px;
+  padding: 14px 57px 12px 57px;
   max-width: 465px;
   font-weight: 700;
   font-size: 16px;
@@ -875,7 +875,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
 }
 
 .modal__form-wrapper button:hover {
@@ -1019,10 +1019,11 @@ button,
 }
 
 .header__logo-link-wrapper {
-  margin: 0 13.5% 0 0;
+  margin: 0 13.2% 0 0;
 }
 
 .header__contacts {
+  max-width: 460px;
   margin: 0 13.6% 0 0;
 }
 
@@ -1039,7 +1040,7 @@ button,
 }
 
 .header__contacts a:not(:last-child) {
-  margin: 0 6.3vw 0 0;
+  margin: 0 5.7vw 0 0;
 }
 
 .header__email {
@@ -1858,6 +1859,13 @@ button,
   }
 }
 
+@media (min-width: 1023px) {
+  .header__icon {
+    position: relative;
+    top: 5px;
+  }
+}
+
 @media (min-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1023px) and (min-resolution: 2dppx) {
   .feedback > div {
     background-image: url("../img/paper-airplane@2x.png");
@@ -1989,11 +1997,13 @@ button,
   }
 
   .header__contacts {
+    max-width: 230px;
     margin: 0 29px 0 auto;
   }
 
   .header__contacts a:not(:last-child) {
     margin: 0 35px 0 0;
+    margin: 0 6.3vw 0 0;
   }
 
   .header__email + .header__contacts a {
@@ -2324,6 +2334,7 @@ button,
   }
 
   .header__contacts {
+    max-width: 150px;
     margin: 0 17px 0 auto;
   }
 
