@@ -14,7 +14,7 @@
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
-    background: url("../img/tablet/welcome-background.jpg");
+    background-image: url("../img/tablet/welcome-background.jpg");
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
@@ -25,7 +25,7 @@
 
   @media (max-width: $vp-767) {
     min-width: 320px;
-    background: url("../img/mobile/welcome-background.jpg");
+    background-image: url("../img/mobile/welcome-background.jpg");
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
