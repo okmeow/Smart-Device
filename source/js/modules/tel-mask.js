@@ -33,6 +33,11 @@ function telMask () {
   input.addEventListener("focus", mask, false);
   input.addEventListener("blur", mask, false);
   input.addEventListener("keydown", mask, false);
+  input.addEventListener('click', () => {
+    if (input.value.length < 5) {
+      input.selectionStart = input.value.length;
+    }
+  });
 
   });
 };
