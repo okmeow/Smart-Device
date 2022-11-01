@@ -15,33 +15,28 @@ const modalTextarea = document.querySelector('[data-modal-textarea="modal-textar
 
 const isTabKey = (evt) => evt.key === 'Tab';
 
-modalTextarea.addEventListener('keydown', (evt) => {
-  if (isTabKey(evt)) {
-    evt.preventDefault();
-    modalCheckbox.focus();
-  };
-});
+const modalFormFocusHandlers = () => {
+  modalTextarea.addEventListener('keydown', (evt) => {
+    if (isTabKey(evt)) {
+      evt.preventDefault();
+      modalCheckbox.focus();
+    };
+  });
 
-modalCheckbox.addEventListener('keydown', (evt) => {
-  if (isTabKey(evt)) {
-    evt.preventDefault();
-    modalButton.focus();
-  };
-});
+  modalCheckbox.addEventListener('keydown', (evt) => {
+    if (isTabKey(evt)) {
+      evt.preventDefault();
+      modalButton.focus();
+    };
+  });
 
-modalCheckbox.addEventListener('keydown', (evt) => {
-  if (isTabKey(evt)) {
-    evt.preventDefault();
-    modalButton.focus();
-  };
-});
-
-modalButton.addEventListener('keydown', (evt) => {
-  if (isTabKey(evt)) {
-    evt.preventDefault();
-    closeModalFormButton.focus();
-  };
-});
+  modalButton.addEventListener('keydown', (evt) => {
+    if (isTabKey(evt)) {
+      evt.preventDefault();
+      closeModalFormButton.focus();
+    };
+  });
+};
 
 // Конец блока для изменения порядка фокуса
 
@@ -88,4 +83,4 @@ const modalFormHandler = () => {
   callMeButton.addEventListener('click', openModalForm);
 };
 
-export {modalFormHandler};
+export {modalFormHandler, modalFormFocusHandlers};

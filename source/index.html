@@ -152,13 +152,13 @@
                 <div class="feedback__label-wrapper feedback__label-wrapper--textarea">
                   <label>
                     <span class="visually-hidden">Ваш вопрос</span>
-                    <textarea placeholder="Ваш вопрос" name="question"></textarea>
+                    <textarea placeholder="Ваш вопрос" name="question" data-feedback-textarea="feedback-textarea"></textarea>
                   </label>
                 </div>
-                <button type="submit">Задать вопрос</button>
+                <button type="submit" data-feedback-button="feedback-button">Задать вопрос</button>
                 <div class="feedback__label-wrapper">
                   <label>
-                    <input class="visually-hidden" type="checkbox" name="personal" value="agreement" required checked>
+                    <input class="visually-hidden" type="checkbox" name="personal" value="agreement" data-feedback-checkbox="feedback-checkbox" required checked>
                     <span class="feedback__checkbox-mark"></span>
                     <span class="feedback__checkbox-text">Я согласен на&nbsp;обработку персональных данных</span>
                   </label>
@@ -174,7 +174,7 @@
       <div>
         <section class="footer__social social">
           <h3 class="visually-hidden">Социальные сети</h3>
-          <a href="index.html">
+          <a href="index.html" data-footer-logo="footer-logo">
             <picture>
               <img src="img/logo-desktop.svg" width="215" height="55" alt="Логотип сайта.">
             </picture>
