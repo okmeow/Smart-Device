@@ -1984,6 +1984,10 @@ button,
     margin: 0 7% 0 0;
   }
 
+  .header__contacts a:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
+
   .about > div {
     background-position: 17.8% 60px;
   }
@@ -2000,6 +2004,7 @@ button,
 
   .header__contacts {
     margin: 0 5% 0 0;
+    max-width: 410px;
   }
 }
 
