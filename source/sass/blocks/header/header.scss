@@ -82,7 +82,11 @@
   max-width: 460px;
   margin: 0 13.6% 0 0;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1600px) {
+    max-width: 450px;
+  }
+
+  @media (max-width: 1350px) {
     margin: 0 7% 0 0;
   }
 
@@ -117,8 +121,8 @@
 .header__contacts a:not(:last-child) {
   margin: 0 5.7vw 0 0;
 
-  @media (max-width: 1300px) {
-    margin: 0 30px 0 0;
+  @media (max-width: 1600px) {
+    margin: 0 25px 0 0;
   }
 
   @media (max-width: $vp-1023) {

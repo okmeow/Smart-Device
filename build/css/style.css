@@ -1953,6 +1953,16 @@ button,
   }
 }
 
+@media (max-width: 1600px) {
+  .header__contacts {
+    max-width: 450px;
+  }
+
+  .header__contacts a:not(:last-child) {
+    margin: 0 25px 0 0;
+  }
+}
+
 @media (max-width: 1500px) {
   .header > div {
     padding: 30px 5% 35px 13.2%;
@@ -1975,17 +1985,15 @@ button,
   }
 }
 
-@media (max-width: 1300px) {
-  .header > div {
-    padding: 30px 4% 35px 10%;
-  }
-
+@media (max-width: 1350px) {
   .header__contacts {
     margin: 0 7% 0 0;
   }
+}
 
-  .header__contacts a:not(:last-child) {
-    margin: 0 30px 0 0;
+@media (max-width: 1300px) {
+  .header > div {
+    padding: 30px 4% 35px 10%;
   }
 
   .about > div {
