@@ -47,10 +47,11 @@
 .advantages__item {
   box-sizing: border-box;
   border: 1px solid #ebebeb;
-  border-left: 5px solid #00b2ff;
+  border-left: 5px solid $color-default-orange;
   padding: 40px 40px 40px 40px;
-  color: #00b2ff;
-  min-height: 300px;
+  color: $color-default-orange;
+  background-color: #eeeeee;
+  min-height: 250px;
 
   @media (max-width: $vp-1023) {
     padding: 38px 35px 30px 41px;
@@ -79,8 +80,8 @@
 }
 
 .advantages__item > p {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: #00b2ff;
+  font-family: $ff-roboto;
+  color: $color-default-black;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -119,12 +120,12 @@
 }
 
 .advantages__item:hover {
-  background-color: #00b2ff;
+  background-color: $color-default-orange;
   color: #f2f5f7;
-  border: 1px solid #00b2ff;
-  border-left: 5px solid #00b2ff;
+  border: 1px solid $color-default-orange;
+  border-left: 5px solid $color-default-orange;
 }
 
 .advantages__item:hover p {
-  color: #f2f5f7;
+  color: $color-default-white;
 }

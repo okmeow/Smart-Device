@@ -22,7 +22,7 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 1920px;
-  padding: 20px 18.2% 20px 18.2%;
+  padding: 20px 12% 20px 12%;
   align-items: center;
   margin: 0 auto;
 
@@ -52,15 +52,7 @@
 }
 
 .header__logo-link-wrapper {
-  margin: 0 5% 0 0;
-
-  @media (max-width: 1420px) {
-    margin: 0 10% 0 0;
-  }
-
-  @media (max-width: 1180px) {
-    margin: 0 5% 0 0;
-  }
+  margin: 0 2% 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 10% 0 0;
@@ -81,24 +73,33 @@
 .header__list {
   list-style-type: none;
   display: flex;
+  margin: 0 190px 0 0;
+  padding: 0;
 }
 
 .header__item {
   margin: 0 30px 0 0;
 }
 
+.header__link {
+  font-family: $ff-roboto;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+
+  &:hover {
+    color: $color-default-orange;
+  }
+
+  &:active {
+    color: $color-default-orange;
+    opacity: 0.8;
+  }
+}
+
 .header__contacts {
   max-width: 600px;
-  margin: 0 13.6% 0 0;
-
-  @media (max-width: 1350px) {
-    margin: 0 7% 0 0;
-  }
-
-  @media (max-width: 1180px) {
-    margin: 0 5% 0 0;
-    max-width: 410px;
-  }
+  margin: 0 40px 0 0;
 
   @media (max-width: $vp-1023) {
     max-width: 230px;
@@ -125,11 +126,7 @@
 }
 
 .header__contacts a:not(:last-child) {
-  margin: 0 5.7vw 0 0;
-
-  @media (max-width: 1600px) {
-    margin: 0 25px 0 0;
-  }
+  margin: 0 40px 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 32px 0 0;
@@ -220,8 +217,6 @@
   }
 
   &:active {
-    // outline: 2px solid $color-default-orange;
-    outline-offset: 1px;
     opacity: 0.8;
   }
 }

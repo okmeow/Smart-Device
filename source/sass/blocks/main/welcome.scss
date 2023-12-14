@@ -35,10 +35,10 @@
 
 .welcome > div {
   width: 100%;
-  margin: 160px auto 0 auto;
+  margin: 135px auto 0 auto;
   max-width: 1920px;
   padding: 250px 15% 278px 10%;
-  z-index: 3;
+  display: flex;
 
   @media (max-width: $vp-1023) {
     padding: 180px 6.5% 204px 6.5%;
@@ -51,7 +51,7 @@
 
 .welcome h2 {
   color: $color-default-white;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-roboto;
   font-size: 80px;
   line-height: 94px;
   font-weight: 700;
@@ -72,7 +72,7 @@
 
 .welcome p {
   color: $color-default-white;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-roboto;
   font-size: 30px;
   line-height: 34px;
   font-weight: 400;
@@ -95,14 +95,14 @@
   display: inline-block;
   vertical-align: baseline;
   color: $color-default-white;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-roboto;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 16px 26px 18px 26px;
-  background-color: #ff9100;
+  background-color: $color-default-orange;
   border-radius: 3px;
   user-select: none;
 
@@ -120,12 +120,99 @@
   }
 
   &:hover {
-    outline: 2px solid #00b2ff;
-    outline-offset: 2px;
+    background-color: rgba(255,163,26, 0.9);
   }
 
   &:active {
-    outline: 2px solid #00b2ff;
-    outline-offset: 1px;
+    background-color: rgba(255,163,26, 0.8);
+  }
+}
+
+// крутящаяся дверь, переписать стили
+
+.logo__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 150px 5% 150px 5%;
+
+  @media (max-width: $vp-1023) {
+    padding: 180px 6.5% 204px 6.5%;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 150px 8.5% 190px 8.5%;
+  }
+}
+
+.logo__door {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo__mask {
+  width: 180px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: -5px auto 0 auto;
+}
+
+.logo__inside {
+  width: 5px;
+  height: 120px;
+  background-color: #000000;
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 2px);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 120px;
+    background-color: #000000;
+    transform: rotate(60deg);
+    position: absolute;
+    top: 105px;
+    right: 62px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 120px;
+    background-color: #000000;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: 105px;
+    left: 62px;
+  }
+
+  animation-name: door-swing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  transform-origin: 51% 108% 0;
+  animation-timing-function: ease;
+  transform: rotate(30deg);
+
+}
+
+
+@keyframes door-swing {
+  from {
+    transform: rotate(30deg);
+  }
+
+  to {
+    transform: rotate(-330deg);
   }
 }

@@ -1,6 +1,7 @@
 .about {
   width: 100vw;
   min-width: $vp-1024;
+  background-color: #eeeeee;
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
@@ -15,44 +16,30 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 60px 18% 120px 31.3%;
-  background: url("../img/year2022.png") 19.8% 60px no-repeat;
-  display: flex;
-  flex-direction: column;
+  padding: 150px 11% 120px 11%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 200px;
 
   @media (min-width: 1921px) {
     padding: 60px 345px 120px 600px;
   }
 
-  @media (min-width: $vp-768) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/year2022@2x.png");
-      background-size: 150px auto;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media (max-width: 1300px) {
-    background-position: 17.8% 60px;
-  }
-
   @media (max-width: $vp-1023) {
     padding: 15px 6.5% 80px 29.3%;
-    background-position: 7% 20px;
   }
 
   @media (max-width: $vp-767) {
     padding: 15px 7.81% 80px 7.81%;
-    background: none;
   }
 }
 
 .about h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-  color: #041827;
+  font-size: 62px;
+  line-height: 70px;
+  color: $color-default-black;
   margin: 0 0 15px 0;
 
   @media (max-width: $vp-1023) {
@@ -66,12 +53,12 @@
   }
 }
 
-.about p {
+.about__description p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #041827;
+  font-size: 26px;
+  line-height: 34px;
+  color: $color-default-black;
   margin: 0 0 15px 0;
 
   @media (max-width: $vp-767) {
@@ -85,7 +72,7 @@
   vertical-align: baseline;
   margin: 25px 0 0 0;
   padding: 14px 49px 14px 49px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

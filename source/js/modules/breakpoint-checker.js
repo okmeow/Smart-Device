@@ -8,12 +8,12 @@ const breakpointChecker = () => {
   if (breakpoint.matches) {
     footerNavTitle.tabIndex="0";
     footerContactsTitle.tabIndex="0";
-    welcomeButton.textContent="Бесплатная консультация";
+    welcomeButton.textContent="Консультация";
     catalogTitle.textContent="Товары и услуги Uger";
   } else {
     footerNavTitle.tabIndex="-1";
     footerContactsTitle.tabIndex="-1";
-    welcomeButton.textContent="Получить бесплатную консультацию";
+    welcomeButton.textContent="Получить консультацию";
     catalogTitle.textContent="Uger предлагает следующие товары и услуги";
   }
 }
