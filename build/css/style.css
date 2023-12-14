@@ -1038,6 +1038,9 @@ button,
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__link:hover {
@@ -1056,6 +1059,9 @@ button,
 
 .header__contacts a {
   color: #000000;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__contacts a:hover {
@@ -1081,6 +1087,9 @@ button,
   font-weight: 700;
   padding: 10px 0 10px 5px;
   margin-bottom: 7px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__phone {
@@ -1090,6 +1099,9 @@ button,
   line-height: 18px;
   font-weight: 700;
   padding: 10px 0 10px 5px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .header__contacts a:hover .header__email {
@@ -1117,6 +1129,9 @@ button,
   -ms-user-select: none;
   user-select: none;
   max-width: 160px;
+  -webkit-transition: color 0.3s ease, border 0.3s ease;
+  -o-transition: color 0.3s ease, border 0.3s ease;
+  transition: color 0.3s ease, border 0.3s ease;
 }
 
 .header > div > a:hover {
@@ -1141,9 +1156,9 @@ button,
   width: 100vw;
   min-width: 1024px;
   background-color: #1f2227;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("../img/welcome-background.jpg");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../img/welcome.png");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome.png");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1196,14 +1211,18 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .welcome a:hover {
-  background-color: rgba(255, 163, 26, 0.9);
+  background-color: #ff9900;
 }
 
 .welcome a:active {
-  background-color: rgba(255, 163, 26, 0.8);
+  background-color: #ff9900;
+  opacity: 0.9;
 }
 
 .logo__wrapper {
@@ -1319,7 +1338,7 @@ button,
 .advantages > div {
   width: 100%;
   max-width: 1920px;
-  padding: 122px 18% 60px 18.2%;
+  padding: 100px 18% 90px 18.2%;
   margin: 0 auto;
 }
 
@@ -1343,10 +1362,16 @@ button,
   color: #ff9100;
   background-color: #eeeeee;
   min-height: 250px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .advantages__icon {
   margin: 0 0 15px 0;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .advantages__item > p {
@@ -1356,6 +1381,9 @@ button,
   font-size: 24px;
   line-height: 34px;
   margin: 0 0 15px 0;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .advantages__item-description-wrapper > p {
@@ -1365,6 +1393,9 @@ button,
   line-height: 135%;
   color: #041827;
   margin: 0;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .advantages__item:hover {
@@ -1455,7 +1486,7 @@ button,
 }
 
 .logo__img {
-  margin: 0 auto 50px auto;
+  margin: 0 0 0 20px;
   border: 5px solid #000000;
   border-radius: 7px;
   width: 130px;
@@ -1492,6 +1523,7 @@ button,
   background-image: url("../img/paper-airplane.png");
   background-position: 24.5% 245px;
   background-repeat: no-repeat;
+  background-size: 310px auto;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
@@ -1505,15 +1537,6 @@ button,
   font-size: 36px;
   line-height: 51px;
   margin: 0 0 12px -5px;
-}
-
-.feedback p {
-  font-weight: 400;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 22px;
-  margin: 0 0 35px 0;
 }
 
 .feedback__form-wrapper fieldset {
@@ -1649,16 +1672,18 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .feedback__form-wrapper button:hover {
-  outline: 2px solid #ff9100;
-  outline-offset: 2px;
+  background-color: #ff9900;
 }
 
 .feedback__form-wrapper button:active {
-  outline: 2px solid #ff9100;
-  outline-offset: 1px;
+  background-color: #ff9900;
+  opacity: 0.9;
 }
 
 .feedback__checkbox-mark {
@@ -1942,14 +1967,6 @@ button,
   }
 }
 
-@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
-  .welcome {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("../img/welcome-background@2x.jpg");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background@2x.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background@2x.jpg");
-  }
-}
-
 @media (min-width: 1921px) {
   .header > div {
     padding: 30px 158px 35px 350px;
@@ -2054,11 +2071,6 @@ button,
     margin: -95px auto 0 auto;
   }
 
-  .welcome {
-    min-width: 768px;
-    background-image: url("../img/welcome-background.jpg");
-  }
-
   .welcome > div {
     padding: 180px 6.5% 204px 6.5%;
   }
@@ -2132,10 +2144,6 @@ button,
 
   .feedback h3 {
     margin: 0 0 6px 0;
-  }
-
-  .feedback p {
-    margin: 0 0 25px 0;
   }
 
   .feedback__form-wrapper fieldset {
@@ -2239,12 +2247,6 @@ button,
   }
 }
 
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
-  .welcome {
-    background-image: url("../img/welcome-background@2x.jpg");
-  }
-}
-
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
@@ -2311,11 +2313,6 @@ button,
   .main-container {
     min-width: 320px;
     margin: -70px auto 0 auto;
-  }
-
-  .welcome {
-    min-width: 320px;
-    background-image: url("../img/welcome-background.jpg");
   }
 
   .welcome > div {
@@ -2420,12 +2417,6 @@ button,
   .feedback h3 {
     font-size: 30px;
     line-height: 42px;
-  }
-
-  .feedback p {
-    font-size: 14px;
-    line-height: 19px;
-    margin: 0 0 35px 0;
   }
 
   .feedback__form-wrapper fieldset {
@@ -2713,18 +2704,6 @@ button,
 
   .footer-contacts__wrapper > a:last-child {
     margin: 0 0 20px 0;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
-  .welcome {
-    background-image: url("../img/welcome-background@2x.jpg");
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .advantages__item--price > p {
-    margin: 0 0 2px 0;
   }
 }
 

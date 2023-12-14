@@ -2,35 +2,35 @@
   width: 100vw;
   min-width: $vp-1024;
   background-color: #1f2227;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome.png");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
 
-  @media (min-width: $vp-1024) {
-    @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background@2x.jpg");
-    }
-  }
+  // @media (min-width: $vp-1024) {
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome.jpg");
+  //   }
+  // }
 
-  @media (max-width: $vp-1023) {
-    min-width: 768px;
-    background-image: url("../img/welcome-background.jpg");
+  // @media (max-width: $vp-1023) {
+  //   min-width: 768px;
+  //   background-image: url("../img/welcome-background.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/welcome-background@2x.jpg");
-    }
-  }
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/welcome-background@2x.jpg");
+  //   }
+  // }
 
-  @media (max-width: $vp-767) {
-    min-width: 320px;
-    background-image: url("../img/welcome-background.jpg");
+  // @media (max-width: $vp-767) {
+  //   min-width: 320px;
+  //   background-image: url("../img/welcome-background.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/welcome-background@2x.jpg");
-    }
-  }
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/welcome-background@2x.jpg");
+  //   }
+  // }
 }
 
 .welcome > div {
@@ -105,6 +105,7 @@
   background-color: $color-default-orange;
   border-radius: 3px;
   user-select: none;
+  transition: background-color $trans-default;
 
   @media (max-width: $vp-1023) {
     margin: 0 0 0 45px;
@@ -120,11 +121,12 @@
   }
 
   &:hover {
-    background-color: rgba(255,163,26, 0.9);
+    background-color: #ff9900;
   }
 
   &:active {
-    background-color: rgba(255,163,26, 0.8);
+    background-color: #ff9900;
+    opacity: 0.9;
   }
 }
 

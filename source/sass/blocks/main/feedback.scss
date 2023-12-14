@@ -17,6 +17,7 @@
   background-image: url("../img/paper-airplane.png");
   background-position: 24.5% 245px;
   background-repeat: no-repeat;
+  background-size: 310px auto;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
@@ -65,24 +66,24 @@
   }
 }
 
-.feedback p {
-  font-weight: 400;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 22px;
-  margin: 0 0 35px 0;
+// .feedback p {
+//   font-weight: 400;
+//   font-family: "PT Mono", "Arial", sans-serif;
+//   font-size: 16px;
+//   color: #ffffff;
+//   line-height: 22px;
+//   margin: 0 0 35px 0;
 
-  @media (max-width: $vp-1023) {
-    margin: 0 0 25px 0;
-  }
+//   @media (max-width: $vp-1023) {
+//     margin: 0 0 25px 0;
+//   }
 
-  @media (max-width: $vp-767) {
-    font-size: 14px;
-    line-height: 19px;
-    margin: 0 0 35px 0;
-  }
-}
+//   @media (max-width: $vp-767) {
+//     font-size: 14px;
+//     line-height: 19px;
+//     margin: 0 0 35px 0;
+//   }
+// }
 
 .feedback__form-wrapper fieldset {
   display: grid;
@@ -203,12 +204,13 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-default-white;
   border: none;
   background-color: $color-default-orange;
   border-radius: 3px;
   cursor: pointer;
   user-select: none;
+  transition: background-color $trans-default;
 
   @media (max-width: $vp-1023) {
     padding: 16px 59px 10px 59px;
@@ -220,13 +222,12 @@
   }
 
   &:hover {
-    outline: 2px solid $color-default-orange;
-    outline-offset: 2px;
+    background-color: #ff9900;
   }
 
   &:active {
-    outline: 2px solid $color-default-orange;
-    outline-offset: 1px;
+    background-color: #ff9900;
+    opacity: 0.9;
   }
 }
 

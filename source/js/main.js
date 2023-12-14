@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {modalFormHandler, modalFormFocusHandlers} from './modules/modal.js'
+import {modalFormHandler} from './modules/modal.js'
+// import {modalFormHandler, modalFormFocusHandlers} from './modules/modal.js'
 import {mobileFooterNavClickHandler, mobileFooterContactsClickHandler} from './modules/footer-menu.js'
 import {telMask} from './modules/tel-mask.js'
 import {breakpointChecker} from './modules/breakpoint-checker.js'
@@ -15,7 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   mobileFooterContactsClickHandler();
   feedbackFormHandlers();
   modalFormHandler();
-  modalFormFocusHandlers();
+  // modalFormFocusHandlers();
+  console.log('a');
   window.addEventListener('load', () => {
     initModals();
   });
