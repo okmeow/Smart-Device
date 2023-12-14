@@ -9,12 +9,12 @@ const breakpointChecker = () => {
     footerNavTitle.tabIndex="0";
     footerContactsTitle.tabIndex="0";
     welcomeButton.textContent="Бесплатная консультация";
-    catalogTitle.textContent="Товары и услуги Smart Device";
+    catalogTitle.textContent="Товары и услуги Uger";
   } else {
     footerNavTitle.tabIndex="-1";
     footerContactsTitle.tabIndex="-1";
     welcomeButton.textContent="Получить бесплатную консультацию";
-    catalogTitle.textContent="Smart Device предлагает следующие товары и услуги";
+    catalogTitle.textContent="Uger предлагает следующие товары и услуги";
   }
 }
 breakpoint.addListener(breakpointChecker);

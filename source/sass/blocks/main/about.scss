@@ -80,12 +80,6 @@
   }
 }
 
-.about__extra-description {
-  @media (max-width: $vp-767) {
-    display: none;
-  }
-}
-
 .about button {
   display: inline-block;
   vertical-align: baseline;

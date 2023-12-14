@@ -1,46 +1,44 @@
 .welcome {
   width: 100vw;
   min-width: $vp-1024;
-  background-color: #25313d;
-  background-image: url("../img/welcome-background.jpg");
+  background-color: #1f2227;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
+
   @media (min-width: $vp-1024) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/welcome-background@2x.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome-background@2x.jpg");
     }
   }
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
-    background-image: url("../img/tablet/welcome-background.jpg");
+    background-image: url("../img/welcome-background.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablet/welcome-background@2x.jpg");
+      background-image: url("../img/welcome-background@2x.jpg");
     }
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
-    background-image: url("../img/mobile/welcome-background.jpg");
+    background-image: url("../img/welcome-background.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/welcome-background@2x.jpg");
+      background-image: url("../img/welcome-background@2x.jpg");
     }
   }
 }
 
 .welcome > div {
   width: 100%;
-  margin: 0 auto;
+  margin: 160px auto 0 auto;
   max-width: 1920px;
-  padding: 305px 5% 278px 24.7%;
-
-  @media (min-width: 1921px) {
-    padding: 305px 100px 278px 475px;
-  }
+  padding: 250px 15% 278px 10%;
+  z-index: 3;
 
   @media (max-width: $vp-1023) {
     padding: 180px 6.5% 204px 6.5%;
@@ -52,14 +50,12 @@
 }
 
 .welcome h2 {
-  color: #f2f5f7;
+  color: $color-default-white;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
   font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  margin: 0 0 30px 0;
+  margin: 0 0 40px 0;
 
   @media (max-width: $vp-1023) {
     font-size: 64px;
@@ -75,9 +71,9 @@
 }
 
 .welcome p {
-  color: #f2f5f7;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 22px;
+  color: $color-default-white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 30px;
   line-height: 34px;
   font-weight: 400;
   text-transform: lowercase;
@@ -98,7 +94,7 @@
 .welcome a {
   display: inline-block;
   vertical-align: baseline;
-  color: #f2f5f7;
+  color: $color-default-white;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -106,7 +102,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 16px 26px 18px 26px;
-  background-color: #00b2ff;
+  background-color: #ff9100;
   border-radius: 3px;
   user-select: none;
 

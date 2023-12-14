@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {aboutButtonClickHandler} from './modules/about.js'
 import {modalFormHandler, modalFormFocusHandlers} from './modules/modal.js'
 import {mobileFooterNavClickHandler, mobileFooterContactsClickHandler} from './modules/footer-menu.js'
 import {telMask} from './modules/tel-mask.js'
@@ -11,7 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   breakpointChecker();
-  aboutButtonClickHandler();
   telMask();
   mobileFooterNavClickHandler();
   mobileFooterContactsClickHandler();
