@@ -165,10 +165,11 @@
   color: rgba(255, 255, 255, 0.7);
 
   &:hover {
-    color: #ffffff;
+    color: $color-default-orange;
   }
 
   &:active {
-    color: #00b2ff;
+    color: $color-default-orange;
+    opacity: 0.9;
   }
 }

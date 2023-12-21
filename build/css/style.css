@@ -1852,11 +1852,12 @@ button,
 }
 
 .footer-navigation__item > a:hover {
-  color: #ffffff;
+  color: #ff9100;
 }
 
 .footer-navigation__item > a:active {
-  color: #00b2ff;
+  color: #ff9100;
+  opacity: 0.9;
 }
 
 .footer-contacts {
@@ -1894,11 +1895,12 @@ button,
 }
 
 .footer-contacts__wrapper > a:hover {
-  color: #ffffff;
+  color: #ff9100;
 }
 
 .footer-contacts__wrapper > a:active {
-  color: #00b2ff;
+  color: #ff9100;
+  opacity: 0.9;
 }
 
 .footer-contacts__wrapper > a:not(:last-child) {

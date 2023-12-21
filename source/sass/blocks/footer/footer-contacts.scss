@@ -147,11 +147,12 @@
   max-width: 180px;
 
   &:hover {
-    color: #ffffff;
+    color: $color-default-orange;
   }
 
   &:active {
-    color: #00b2ff;
+    color: $color-default-orange;
+    opacity: 0.9;
   }
 
   @media (max-width: $vp-767) {
