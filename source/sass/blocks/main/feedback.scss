@@ -34,10 +34,6 @@
     }
   }
 
-  @media (max-width: 1420px) {
-    background-position: 0 260px;
-  }
-
   @media (max-width: $vp-1023) {
     padding: 47px 6.5% 125px 6.5%;
     background-image: none;
@@ -215,10 +211,12 @@
   @media (max-width: $vp-1023) {
     padding: 16px 59px 10px 59px;
     margin: -7px 0 0 0;
+    padding: 116px 59px 110px 59px;
   }
 
   @media (max-width: $vp-767) {
     max-width: 270px;
+    padding: 16px 159px 10px 159px;
   }
 
   &:hover {

@@ -4,7 +4,7 @@
   margin: 0 auto;
   position: fixed;
   top: 0;
-  background: $color-default-white;
+  background-color: $color-default-white;
   z-index: 2;
 
   @media (max-width: $vp-1023) {
@@ -19,31 +19,22 @@
 
 .header > div {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1920px;
-  padding: 20px 12% 20px 12%;
+  padding: 20px 5% 20px 10%;
   align-items: center;
   margin: 0 auto;
 
+
   @media (min-width: 1921px) {
-    padding: 30px 158px 35px 350px;
-  }
-
-  @media (max-width: 1820px) {
-    padding: 30px 8% 35px 17.2%;
-  }
-
-  @media (max-width: 1500px) {
-    padding: 30px 5% 35px 13.2%;
-  }
-
-  @media (max-width: 1300px) {
-    padding: 30px 4% 35px 10%;
+    padding: 20px 170px 20px 200px;
   }
 
   @media (max-width: $vp-1023) {
     padding: 20px 6.5%;
+    display: none;
   }
 
   @media (max-width: $vp-767) {
@@ -52,7 +43,7 @@
 }
 
 .header__logo-link-wrapper {
-  margin: 0 2% 0 0;
+  margin: 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 10% 0 0;
@@ -73,7 +64,7 @@
 .header__list {
   list-style-type: none;
   display: flex;
-  margin: 0 190px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -128,7 +119,7 @@
 }
 
 .header__contacts a:not(:last-child) {
-  margin: 0 40px 0 0;
+  margin: 0 30px 0 0;
 
   @media (max-width: $vp-1023) {
     margin: 0 32px 0 0;

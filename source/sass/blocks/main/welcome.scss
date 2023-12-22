@@ -2,43 +2,36 @@
   width: 100vw;
   min-width: $vp-1024;
   background-color: #1f2227;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome-background.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
-
   // @media (min-width: $vp-1024) {
   //   @media (min-resolution: 2dppx) {
-  //     background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/welcome.jpg");
+  //     background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome-background@.jpg");
   //   }
   // }
 
-  // @media (max-width: $vp-1023) {
-  //   min-width: 768px;
-  //   background-image: url("../img/welcome-background.jpg");
+  @media (max-width: $vp-1023) {
+    min-width: 768px;
+  }
 
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: url("../img/welcome-background@2x.jpg");
-  //   }
-  // }
-
-  // @media (max-width: $vp-767) {
-  //   min-width: 320px;
-  //   background-image: url("../img/welcome-background.jpg");
-
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: url("../img/welcome-background@2x.jpg");
-  //   }
-  // }
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
 
 .welcome > div {
   width: 100%;
-  margin: 135px auto 0 auto;
+  margin: 117px auto 0 auto;
   max-width: 1920px;
   padding: 250px 15% 278px 10%;
   display: flex;
+
+  @media (min-width: 1921px) {
+    padding: 250px 200px 278px 280px;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 180px 6.5% 204px 6.5%;
@@ -205,7 +198,6 @@
   transform-origin: 51% 108% 0;
   animation-timing-function: ease;
   transform: rotate(30deg);
-
 }
 
 

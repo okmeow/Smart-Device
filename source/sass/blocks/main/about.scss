@@ -5,10 +5,12 @@
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
+    background-color: #d51212;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
+    background-color: #eeff00;
   }
 }
 
@@ -22,7 +24,7 @@
   gap: 200px;
 
   @media (min-width: 1921px) {
-    padding: 60px 345px 120px 600px;
+    padding: 60px 205px 120px 200px;
   }
 
   @media (max-width: $vp-1023) {

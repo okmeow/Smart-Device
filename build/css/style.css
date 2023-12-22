@@ -997,7 +997,7 @@ button,
   margin: 0 auto;
   position: fixed;
   top: 0;
-  background: #ffffff;
+  background-color: #ffffff;
   z-index: 2;
 }
 
@@ -1005,11 +1005,14 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1920px;
-  padding: 20px 12% 20px 12%;
+  padding: 20px 5% 20px 10%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1017,7 +1020,7 @@ button,
 }
 
 .header__logo-link-wrapper {
-  margin: 0 2% 0 0;
+  margin: 0;
 }
 
 .header__list {
@@ -1025,7 +1028,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 190px 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -1074,7 +1077,7 @@ button,
 }
 
 .header__contacts a:not(:last-child) {
-  margin: 0 40px 0 0;
+  margin: 0 30px 0 0;
 }
 
 .header__email {
@@ -1156,9 +1159,9 @@ button,
   width: 100vw;
   min-width: 1024px;
   background-color: #1f2227;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../img/welcome.png");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../img/welcome-background.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome-background.jpg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1166,7 +1169,7 @@ button,
 
 .welcome > div {
   width: 100%;
-  margin: 135px auto 0 auto;
+  margin: 117px auto 0 auto;
   max-width: 1920px;
   padding: 250px 15% 278px 10%;
   display: -webkit-box;
@@ -1971,7 +1974,11 @@ button,
 
 @media (min-width: 1921px) {
   .header > div {
-    padding: 30px 158px 35px 350px;
+    padding: 20px 170px 20px 200px;
+  }
+
+  .welcome > div {
+    padding: 250px 200px 278px 280px;
   }
 
   .advantages > div {
@@ -1979,7 +1986,7 @@ button,
   }
 
   .about > div {
-    padding: 60px 345px 120px 600px;
+    padding: 60px 205px 120px 200px;
   }
 
   .feedback > div {
@@ -1991,35 +1998,13 @@ button,
   }
 }
 
-@media (max-width: 1820px) {
-  .header > div {
-    padding: 30px 8% 35px 17.2%;
-  }
-}
-
-@media (max-width: 1500px) {
-  .header > div {
-    padding: 30px 5% 35px 13.2%;
-  }
-}
-
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
   }
 }
 
-@media (max-width: 1420px) {
-  .feedback > div {
-    background-position: 0 260px;
-  }
-}
-
 @media (max-width: 1300px) {
-  .header > div {
-    padding: 30px 4% 35px 10%;
-  }
-
   .footer > div {
     padding: 50px 8.2% 55px 14.2%;
   }
@@ -2037,6 +2022,7 @@ button,
 
   .header > div {
     padding: 20px 6.5%;
+    display: none;
   }
 
   .header__logo-link-wrapper {
@@ -2071,6 +2057,10 @@ button,
   .main-container {
     min-width: 768px;
     margin: -95px auto 0 auto;
+  }
+
+  .welcome {
+    min-width: 768px;
   }
 
   .welcome > div {
@@ -2119,6 +2109,7 @@ button,
 
   .about {
     min-width: 768px;
+    background-color: #d51212;
   }
 
   .about > div {
@@ -2168,6 +2159,7 @@ button,
   .feedback__form-wrapper button {
     padding: 16px 59px 10px 59px;
     margin: -7px 0 0 0;
+    padding: 116px 59px 110px 59px;
   }
 
   .feedback__checkbox-mark {
@@ -2317,6 +2309,10 @@ button,
     margin: -70px auto 0 auto;
   }
 
+  .welcome {
+    min-width: 320px;
+  }
+
   .welcome > div {
     padding: 150px 8.5% 190px 8.5%;
   }
@@ -2385,6 +2381,7 @@ button,
 
   .about {
     min-width: 320px;
+    background-color: #eeff00;
   }
 
   .about > div {
@@ -2448,6 +2445,7 @@ button,
 
   .feedback__form-wrapper button {
     max-width: 270px;
+    padding: 16px 159px 10px 159px;
   }
 
   .feedback__checkbox-mark {
