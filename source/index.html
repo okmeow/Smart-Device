@@ -16,22 +16,22 @@
       <div>
         <div class="header__logo-link-wrapper">
           <a>
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/logo.svg">
+            <!-- <picture>
+              <source media="(max-width: 767px)" srcset="img/logo.svg"> -->
               <img src="img/logo.svg" width="140" height="70" alt="Логотип сайта.">
-            </picture>
+            <!-- </picture> -->
           </a>
         </div>
         <section class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link" href="">О&nbsp;компании</a>
+              <a class="header__link" href="#about">О&nbsp;компании</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="">Каталог</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="">Услуги</a>
+              <a class="header__link" href="#advantages">Услуги</a>
             </li>
             <!-- <li class="header__item">
               <a class="header__link" href="">Контакты</a>
@@ -66,18 +66,20 @@
             <p>Производство и&nbsp;монтаж, техническая поддержка и сервис</p>
             <a href="#feedback-form" data-welcome-button="welcome-button">Получить консультацию</a>
           </div>
-          <!-- <div class="logo__wrapper">
-            <div class="logo__door">
-              <div class="logo__mask"></div>
-              <div class="logo__inside"></div>
-            </div>
-          </div> -->
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div>
-          <h3>Современные карусельные двери</h3>
+          <div class="about__wrapper">
+            <h3>Современные карусельные двери</h3>
+            <div class="logo__wrapper">
+              <div class="logo__door">
+                <div class="logo__mask"></div>
+                <div class="logo__inside"></div>
+              </div>
+            </div>
+          </div>
           <div class="about__description">
             <p>Мы производим карусельные двери на территории Российской Федерации в соответствии с лучшими мировыми технологиями. Выполняем срочные заказы до&nbsp;7&nbsp;недель.</p>
             <p>Все типы карусельных дверей UGER отвечают современным требованиям дизайна, безопасности, эксплуатации и предлагают гибкие возможности по размерному ряду, цветовому исполнению и функциональным требованиям.</p>
@@ -86,7 +88,7 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div>
           <h3 class="visually-hidden">Преимущества работы с&nbsp;нами</h3>
           <ul class="advantages__list">
@@ -215,7 +217,7 @@
               <span class="logo__text logo__text--1">UGER</span>
             </div>
           </a>
-          <ul class="social__list">
+          <!-- <ul class="social__list">
             <li class="social__item">
               <a href="#" target="_blank">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +242,7 @@
                 <span class="visually-hidden">Пинтерест</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </section>
 
         <section class="footer__navigation footer-navigation">

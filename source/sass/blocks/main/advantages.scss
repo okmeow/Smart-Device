@@ -14,11 +14,11 @@
 .advantages > div {
   width: 100%;
   max-width: 1920px;
-  padding: 100px 18% 90px 18.2%;
+  padding: 100px 18% 100px 18.2%;
   margin: 0 auto;
 
   @media (min-width: 1921px) {
-    padding: 122px 345px 60px 350px;
+    padding: 100px 345px 100px 350px;
   }
 
   @media (max-width: $vp-1023) {
