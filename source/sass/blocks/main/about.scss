@@ -5,12 +5,10 @@
 
   @media (max-width: $vp-1023) {
     min-width: 768px;
-    background-color: #d51212;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
-    background-color: #eeff00;
   }
 }
 
@@ -28,7 +26,8 @@
   }
 
   @media (max-width: $vp-1023) {
-    padding: 15px 6.5% 80px 29.3%;
+    display: block;
+    padding: 25px 6% 80px 9%;
   }
 
   @media (max-width: $vp-767) {
@@ -45,7 +44,7 @@
   margin: 0 0 15px 0;
 
   @media (max-width: $vp-1023) {
-    margin: 0 0 13px 0;
+    margin: 0 0 23px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -126,11 +125,7 @@
   padding: 10px 5% 10px 5%;
 
   @media (max-width: $vp-1023) {
-    padding: 180px 6.5% 204px 6.5%;
-  }
-
-  @media (max-width: $vp-767) {
-    padding: 150px 8.5% 190px 8.5%;
+    display: none;
   }
 }
 

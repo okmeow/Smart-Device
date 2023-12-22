@@ -7,12 +7,6 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
-  // @media (min-width: $vp-1024) {
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/welcome-background@.jpg");
-  //   }
-  // }
-
   @media (max-width: $vp-1023) {
     min-width: 768px;
   }
@@ -35,6 +29,7 @@
 
   @media (max-width: $vp-1023) {
     padding: 180px 6.5% 204px 6.5%;
+    margin: 0 auto;
   }
 
   @media (max-width: $vp-767) {

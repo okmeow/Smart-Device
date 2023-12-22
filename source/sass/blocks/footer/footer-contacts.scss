@@ -46,16 +46,17 @@
     cursor: pointer;
 
     &:focus {
-      color: #00b2ff;
-      outline: 2px solid #00b2ff;
+      color: $color-default-orange;
+      outline: 2px solid $color-default-orange;
     }
 
     &:hover {
-      color: #00b2ff;
+      color: $color-default-orange;
     }
 
     &:active {
-      color: #74d5ff;
+      color: $color-default-orange;
+      opacity: 0.9;
     }
   }
 }
